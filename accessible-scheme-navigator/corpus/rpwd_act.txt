@@ -1,0 +1,59 @@
+DOCUMENT: Rights of Persons with Disabilities (RPWD) Act, 2016
+
+---
+21 RECOGNISED DISABILITIES AND DEFINITIONS
+The RPWD Act 2016 officially recognizes the following 21 disability categories:
+1. Blindness: Complete absence of sight or severe visual impairment even after best possible correction.
+2. Low-vision: Partial visual impairment where the person can still use vision to perform tasks with assistive devices.
+3. Leprosy Cured persons: Individuals cured of leprosy but left with loss of sensation, paresis, or physical deformities affecting daily life.
+4. Hearing Impairment: Includes both "Deaf" (severe hearing loss of 70 dB or more) and "Hard of Hearing" (60 to 70 dB loss).
+5. Locomotor Disability: Inability to perform activities associated with moving oneself or objects, usually due to bone, joint, or muscle issues.
+6. Dwarfism: A medical or genetic condition resulting in an adult height of 4 feet 10 inches (147 centimeters) or less.
+7. Intellectual Disability: Significant limitations in both intellectual functioning (learning, reasoning) and adaptive behavior (everyday social and practical skills).
+8. Mental Illness: A substantial disorder of thinking, mood, or memory that grossly impairs judgment, behavior, and the ability to meet ordinary demands of life.
+9. Autism Spectrum Disorder: A neurological and developmental condition affecting communication, social interaction, and behavior.
+10. Cerebral Palsy: A group of non-progressive neurological conditions affecting body movements and muscle coordination.
+11. Muscular Dystrophy: A group of hereditary genetic diseases that progressively weaken the musculoskeletal system.
+12. Chronic Neurological conditions: Conditions like Alzheimer's or Parkinson's that cause progressive deterioration of the nervous system.
+13. Specific Learning Disabilities: Invisible disabilities like dyslexia (reading), dysgraphia (writing), or dyscalculia (math) where an individual struggles with specific skills despite normal intelligence.
+14. Multiple Sclerosis: A disease where the immune system eats away at the protective covering of nerves, disrupting communication between the brain and body.
+15. Speech and Language disability: Permanent conditions affecting the physical or neurological components of speech and language.
+16. Thalassemia: An inherited blood disorder that causes the body to have less hemoglobin than normal.
+17. Hemophilia: A medical condition in which the blood's ability to clot is severely reduced.
+18. Sickle cell disease: A group of inherited red blood cell disorders where cells become misshapen and break down.
+19. Multiple Disabilities: Having more than one of the specified disabilities simultaneously (such as deaf-blindness).
+20. Acid Attack victims: Persons physically disfigured due to violent acid attacks.
+21. Parkinson's disease: A progressive nervous system disorder affecting movement, often marked by tremors, rigidity, and slow movement.
+
+---
+SECTION 16: EDUCATION RIGHTS (DUTY OF EDUCATIONAL INSTITUTIONS)
+All government-funded and government-recognized educational institutions must provide inclusive education to children with disabilities. This means they must:
+- Admit students with disabilities without discrimination.
+- Provide accessible campuses, buildings, and facilities.
+- Provide reasonable accommodations tailored to the individual's requirements.
+- Ensure students with disabilities have equal opportunities to participate in sports and recreational activities.
+
+---
+SECTION 17: ADAPTED CURRICULUM AND INCLUSIVE EDUCATION MEASURES
+The government must take specific measures to make inclusive education a reality. This includes:
+- Conducting surveys every five years to identify school-going children with disabilities and assess their needs.
+- Training teachers and professionals in inclusive education techniques.
+- Providing necessary books, learning materials, and assistive devices to students.
+- Making suitable modifications to the curriculum and examination system to meet the needs of students with disabilities (such as providing extra time, allowing scribes, or altering assessment methods).
+
+---
+SECTION 31: RIGHT TO FREE EDUCATION
+Every child with a benchmark disability (having 40% or more of a recognized disability) between the ages of 6 and 18 years has the right to free education. This education can be pursued in a neighborhood school or in a special school, based on the child's or parents' choice.
+
+---
+SECTIONS 20 AND 34: RIGHT TO EMPLOYMENT
+SECTION 20 (Non-Discrimination): No government establishment can discriminate against any person with a disability in any matter related to employment, including recruitment and promotion. Employers must provide reasonable accommodations. If an employee acquires a disability during their service, they cannot be fired or demoted; they must be shifted to a suitable post with the same pay or kept on a supernumerary post until retirement.
+SECTION 34 (Reservation): All government establishments must reserve a minimum of 4% of total vacancies for persons with benchmark disabilities. 
+
+---
+SECTION 42: ACCESSIBLE ICT MANDATE (INFORMATION AND COMMUNICATION TECHNOLOGY)
+The government is legally mandated to ensure that all information and communication technology is accessible to persons with disabilities. This means:
+- All content available in audio, print, and electronic media must be provided in an accessible format.
+- Electronic media (like videos, television, and apps) must include features like audio descriptions for the visually impaired, sign language interpretation, and closed captioning for the hearing impaired.
+- Electronic goods and everyday equipment must be built using universal design principles so they can be easily used by everyone, regardless of disability.
+

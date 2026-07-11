@@ -1,0 +1,424 @@
+/* ============================================================
+   വഴികാട്ടി · Vazhikaatti — Accessible Scheme Navigator
+   Design tokens: a kasavu (gold-bordered white cotton) palette
+   read against paddy-field green and laterite clay, the three
+   colors most associated with everyday Kerala rather than
+   postcard-tourism cliché.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500;600;700&family=Manjari:wght@400;700&family=Noto+Sans+Malayalam:wght@400;500;600&display=swap');
+
+:root {
+  /* Color */
+  --cream:      #FBF6EC;   /* kasavu cotton */
+  --cream-deep: #F3EAD6;   /* card surface, slightly deeper */
+  --ink:        #1E2A22;   /* body text, forest-black */
+  --ink-soft:   #4B5A50;   /* secondary text */
+  --palm:       #1F5F4C;   /* primary — paddy / palm green */
+  --palm-dark:  #143D31;   /* hover / pressed */
+  --gold:       #B8892E;   /* zari gold — signature accent */
+  --gold-soft:  #EBDCB4;   /* gold tint for badges/backgrounds */
+  --clay:       #A8542E;   /* laterite — used sparingly, alerts */
+  --clay-soft:  #F1DDD1;
+  --white:      #FFFFFF;
+  --line:       #E1D6BE;
+
+  /* Type */
+  --font-display: 'Baloo Chettan 2', 'Noto Sans Malayalam', sans-serif;
+  --font-body: 'Manjari', 'Noto Sans Malayalam', sans-serif;
+
+  /* Layout */
+  --radius: 14px;
+  --radius-sm: 8px;
+  --max-width: 760px;
+  --tap-min: 52px; /* minimum comfortable tap target */
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--palm-dark);
+  margin: 0 0 0.4em;
+}
+
+a { color: var(--palm); }
+
+/* -------- signature: kasavu zari border -------- */
+.kasavu-border {
+  height: 8px;
+  width: 100%;
+  background-image: repeating-linear-gradient(
+    115deg,
+    var(--gold) 0 5px,
+    transparent 5px 11px
+  );
+  opacity: 0.9;
+}
+
+/* -------- shell -------- */
+.site-header {
+  background: var(--white);
+  border-bottom: 1px solid var(--line);
+}
+
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.mark {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.brand-mal {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--palm-dark);
+  font-weight: 700;
+}
+
+.brand-en {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  letter-spacing: 0.02em;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 28px 24px 40px;
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+}
+
+/* -------- hero -------- */
+.hero {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 0.3em;
+}
+
+.hero .en {
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+  max-width: 46ch;
+  margin: 0 auto;
+}
+
+/* -------- card -------- */
+.card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  box-shadow: 0 1px 2px rgba(30, 42, 34, 0.04);
+}
+
+/* -------- form -------- */
+.field {
+  margin-bottom: 22px;
+}
+
+.field label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--ink);
+}
+
+.field .hint {
+  display: block;
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  margin-top: 4px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  min-height: var(--tap-min);
+  padding: 12px 14px;
+  font-size: 1rem;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--cream);
+  border: 2px solid var(--line);
+  border-radius: var(--radius-sm);
+  appearance: none;
+}
+
+select {
+  background-image: linear-gradient(45deg, transparent 50%, var(--palm) 50%),
+                     linear-gradient(135deg, var(--palm) 50%, transparent 50%);
+  background-position: calc(100% - 22px) center, calc(100% - 16px) center;
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+  padding-right: 44px;
+}
+
+input:focus-visible,
+select:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: var(--tap-min);
+  padding: 14px 28px;
+  width: 100%;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--white);
+  background: var(--palm);
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background 0.15s ease;
+  text-decoration: none;
+}
+
+.btn:hover { background: var(--palm-dark); }
+
+.btn[disabled] {
+  background: var(--ink-soft);
+  cursor: wait;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--palm);
+  border: 2px solid var(--palm);
+}
+
+.btn-ghost:hover {
+  background: var(--palm);
+  color: var(--white);
+}
+
+.error-banner {
+  background: var(--clay-soft);
+  border: 1px solid var(--clay);
+  color: var(--clay);
+  padding: 14px 16px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 22px;
+  font-weight: 700;
+}
+
+/* -------- results list -------- */
+.results-header {
+  margin-bottom: 28px;
+}
+
+.profile-chip {
+  display: inline-block;
+  background: var(--gold-soft);
+  color: var(--palm-dark);
+  border-radius: 999px;
+  padding: 5px 14px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.scheme-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.scheme-card {
+  display: block;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--gold);
+  border-radius: var(--radius);
+  padding: 22px 22px 20px;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.scheme-card:hover,
+.scheme-card:focus-visible {
+  box-shadow: 0 6px 18px rgba(30, 42, 34, 0.10);
+  transform: translateY(-1px);
+}
+
+.scheme-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.scheme-card p {
+  margin: 0 0 12px;
+  color: var(--ink);
+}
+
+.qualify-badge {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: var(--cream-deep);
+  color: var(--ink-soft);
+  border: 1px solid var(--line);
+}
+
+.qualify-badge.yes,
+.qualify-badge.likely {
+  background: #E4EFE9;
+  color: var(--palm-dark);
+  border-color: #C3DBCE;
+}
+
+.qualify-badge.check {
+  background: var(--gold-soft);
+  color: #7A5A1A;
+  border-color: #DCC58C;
+}
+
+.card-arrow {
+  float: right;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--ink-soft);
+}
+
+/* -------- detail page -------- */
+.detail-eyebrow {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--gold);
+  margin-bottom: 6px;
+}
+
+.detail-header h1 {
+  font-size: 1.6rem;
+}
+
+.detail-section {
+  margin-top: 26px;
+}
+
+.detail-section h3 {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+  margin-bottom: 10px;
+}
+
+.lang-block {
+  background: var(--cream-deep);
+  border-radius: var(--radius-sm);
+  padding: 16px 18px;
+  margin-bottom: 10px;
+}
+
+.lang-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--palm);
+  margin-bottom: 6px;
+}
+
+.doc-list {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.doc-list li {
+  margin-bottom: 8px;
+}
+
+.next-step-card {
+  margin-top: 26px;
+  background: var(--palm);
+  color: var(--white);
+  border-radius: var(--radius);
+  padding: 22px;
+}
+
+.next-step-card h3 {
+  color: var(--gold-soft);
+  margin-bottom: 8px;
+}
+
+.next-step-card p {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 30px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  body { font-size: 17px; }
+  .hero h1 { font-size: 1.6rem; }
+  .card { padding: 22px 18px; }
+}

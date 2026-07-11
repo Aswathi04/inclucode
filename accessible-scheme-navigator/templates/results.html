@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Schemes · വഴികാട്ടി</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <svg class="mark" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M21 38C21 38 8 32 8 19C8 12 13 7 21 7C29 7 34 12 34 19C34 32 21 38 21 38Z" stroke="#1F5F4C" stroke-width="2.2"/>
+        <path d="M21 7V38" stroke="#1F5F4C" stroke-width="2.2"/>
+        <path d="M21 13C24.5 13 27 15 27 19" stroke="#B8892E" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M21 21C17.5 21 15 23 15 27" stroke="#B8892E" stroke-width="2.2" stroke-linecap="round"/>
+      </svg>
+      <div class="brand">
+        <span class="brand-mal">വഴികാട്ടി</span>
+        <span class="brand-en">Vazhikaatti · Accessible Scheme Navigator</span>
+      </div>
+    </div>
+    <div class="kasavu-border"></div>
+  </header>
+
+  <main>
+    <div class="results-header">
+      <h1>Schemes you may qualify for</h1>
+      {% if profile %}
+        <span class="profile-chip">{{ profile.disability }} · Age {{ profile.age }} · {{ profile.district }}</span>
+      {% endif %}
+    </div>
+
+    {% if schemes %}
+      <div class="scheme-list">
+        {% for s in schemes %}
+          <a class="scheme-card" href="{{ url_for('detail', scheme_id=s.id) }}">
+            <span class="card-arrow">→</span>
+            <h2>{{ s.scheme }}</h2>
+            <p>{{ s.what_you_get }}</p>
+            {% set q = s.qualify|lower %}
+            <span class="qualify-badge {% if 'likely' in q or 'yes' in q %}likely{% elif 'check' in q %}check{% endif %}">
+              {{ s.qualify.split(',')[0].split('.')[0] if s.qualify else 'Check eligibility' }}
+            </span>
+          </a>
+        {% endfor %}
+      </div>
+    {% else %}
+      <div class="empty-state">
+        <h2>No matching schemes found</h2>
+        <p>Try adjusting the disability type or district and search again.</p>
+        <br>
+        <a href="{{ url_for('index') }}" class="btn-ghost btn" style="width:auto; display:inline-flex; padding:12px 24px;">Search again</a>
+      </div>
+    {% endif %}
+
+    {% if schemes %}
+      <a href="{{ url_for('index') }}" class="back-link">← Search again</a>
+    {% endif %}
+  </main>
+
+  <footer class="site-footer">
+    Built for INCLUCODE · Accessibility Software Track
+  </footer>
+
+</body>
+</html>
