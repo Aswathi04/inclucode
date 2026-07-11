@@ -6,7 +6,8 @@ from langchain_community.vectorstores import Chroma
 from langchain_community.document_loaders import DirectoryLoader, TextLoader
 
 load_dotenv()
-
+import shutil
+shutil.rmtree("chroma_db", ignore_errors=True)
 def ingest():
     loader = DirectoryLoader("corpus/", glob="**/*.txt", loader_cls=TextLoader)
     documents = loader.load()
