@@ -20,6 +20,8 @@
         <span class="brand-mal">വഴികാട്ടി</span>
         <span class="brand-en">Vazhikaatti · Accessible Scheme Navigator</span>
       </div>
+      <button type="button" id="voice-toggle" class="voice-toggle">🎙️ Voice mode · ശബ്ദ മോഡ്</button>
+      <span id="voice-status" class="voice-status"></span>
     </div>
     <div class="kasavu-border"></div>
   </header>
@@ -77,9 +79,16 @@
           <span class="hint">This helps us point you to the right district office.</span>
         </div>
 
+        <div class="field">
+          <button type="button" id="mic-btn" onclick="startListening()">
+            🎤 Speak instead · സംസാരിക്കുക
+          </button>
+        </div>
+
         <button type="submit" class="btn" id="submit-btn">
           Find my schemes · എന്റെ ആനുകൂല്യങ്ങൾ കണ്ടെത്തുക →
         </button>
+
       </form>
     </div>
   </main>
@@ -88,11 +97,131 @@
     Built for INCLUCODE · Accessibility Software Track
   </footer>
 
+  <script src="{{ url_for('static', filename='voice.js') }}"></script>
   <script>
     document.getElementById('scheme-form').addEventListener('submit', function () {
       var btn = document.getElementById('submit-btn');
       btn.disabled = true;
       btn.textContent = 'Searching · തിരയുന്നു...';
+    });
+
+    // ---- existing one-shot "Speak instead" button (manual dictation) ----
+    function startListening() {
+      if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
+        alert('Voice input only works on Chrome. Please use Chrome browser.');
+        return;
+      }
+
+      const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+      recognition.lang = 'en-IN';
+      recognition.interimResults = false;
+      recognition.maxAlternatives = 1;
+
+      const btn = document.getElementById('mic-btn');
+      btn.textContent = '🔴 Listening · കേൾക്കുന്നു...';
+
+      recognition.start();
+
+      recognition.onresult = function(event) {
+        const transcript = event.results[0][0].transcript.toLowerCase();
+        btn.textContent = '🎤 Speak instead · സംസാരിക്കുക';
+        fillFormFromVoice(transcript);
+      };
+
+      recognition.onerror = function() {
+        btn.textContent = '🎤 Speak instead · സംസാരിക്കുക';
+        alert('Could not hear clearly. Please try again.');
+      };
+
+      recognition.onend = function() {
+        btn.textContent = '🎤 Speak instead · സംസാരിക്കുക';
+      };
+    }
+
+    function fillFormFromVoice(transcript) {
+      const disabilityMap = {
+        'locomotor': 'Locomotor disability (lower limb)',
+        'lower limb': 'Locomotor disability (lower limb)',
+        'upper limb': 'Locomotor disability (upper limb)',
+        'walking': 'Locomotor disability (lower limb)',
+        'leg': 'Locomotor disability (lower limb)',
+        'arm': 'Locomotor disability (upper limb)',
+        'hand': 'Locomotor disability (upper limb)',
+        'cerebral': 'Cerebral palsy',
+        'palsy': 'Cerebral palsy',
+        'muscular': 'Muscular dystrophy',
+        'dystrophy': 'Muscular dystrophy',
+        'spinal': 'Spinal cord injury',
+        'spine': 'Spinal cord injury',
+      };
+
+      for (const [keyword, value] of Object.entries(disabilityMap)) {
+        if (transcript.includes(keyword)) {
+          document.getElementById('disability').value = value;
+          break;
+        }
+      }
+
+      const ageMatch = transcript.match(/\b(\d{1,3})\b/);
+      if (ageMatch) {
+        document.getElementById('age').value = ageMatch[1];
+      }
+
+      const districts = [
+        'thiruvananthapuram', 'kollam', 'pathanamthitta', 'alappuzha',
+        'kottayam', 'idukki', 'ernakulam', 'thrissur', 'palakkad',
+        'malappuram', 'kozhikode', 'wayanad', 'kannur', 'kasaragod'
+      ];
+
+      for (const district of districts) {
+        if (transcript.includes(district)) {
+          const select = document.getElementById('district');
+          const options = Array.from(select.options);
+          const match = options.find(o => o.text.toLowerCase() === district);
+          if (match) select.value = match.value;
+          break;
+        }
+      }
+    }
+
+    // ---- Voice Mode: continuous, hands-free flow ----
+    document.addEventListener('DOMContentLoaded', function () {
+      VoiceMode.init(document.getElementById('voice-toggle'), document.getElementById('voice-status'));
+
+      function fieldSummary() {
+        const d = document.getElementById('disability');
+        const dist = document.getElementById('district');
+        const a = document.getElementById('age').value;
+        const dText = d.selectedIndex > 0 ? d.options[d.selectedIndex].text : 'not set';
+        const distText = dist.selectedIndex > 0 ? dist.options[dist.selectedIndex].text : 'not set';
+        return `Disability: ${dText}. Age: ${a || 'not set'}. District: ${distText}.`;
+      }
+
+      VoiceMode.commands([
+        {
+          test: t => /\b(search|submit|find)\b/.test(t),
+          action: function () {
+            const d = document.getElementById('disability').value;
+            const a = document.getElementById('age').value;
+            const dist = document.getElementById('district').value;
+            if (!d || !a || !dist) {
+              VoiceMode.speak('Please tell me your disability type, age, and district first. ' + fieldSummary());
+              return;
+            }
+            VoiceMode.speak('Searching for your schemes.', function () {
+              document.getElementById('scheme-form').submit();
+            });
+          }
+        }
+      ], function fallback(transcript) {
+        fillFormFromVoice(transcript);
+        VoiceMode.speak(fieldSummary() + ' Say search when ready.');
+      });
+
+      if (VoiceMode.cameFromVoice()) {
+        VoiceMode.start();
+        VoiceMode.speak('Tell me your disability, age, and district, then say search.');
+      }
     });
   </script>
 

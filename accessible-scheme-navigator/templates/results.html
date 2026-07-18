@@ -20,6 +20,8 @@
         <span class="brand-mal">വഴികാട്ടി</span>
         <span class="brand-en">Vazhikaatti · Accessible Scheme Navigator</span>
       </div>
+      <button type="button" id="voice-toggle" class="voice-toggle">🎙️ Voice mode · ശബ്ദ മോഡ്</button>
+      <span id="voice-status" class="voice-status"></span>
     </div>
     <div class="kasavu-border"></div>
   </header>
@@ -33,9 +35,16 @@
     </div>
 
     {% if schemes %}
+    <div class="voice-controls">
+      <button type="button" onclick="readResults()">🔊 Read aloud · വായിക്കുക</button>
+      <button type="button" onclick="stopReading()">⏹ Stop</button>
+    </div>
+    {% endif %}
+
+    {% if schemes %}
       <div class="scheme-list">
         {% for s in schemes %}
-          <a class="scheme-card" href="{{ url_for('detail', scheme_id=s.id) }}">
+          <a class="scheme-card" data-position="{{ loop.index }}" href="{{ url_for('detail', scheme_id=s.id) }}">
             <span class="card-arrow">→</span>
             <h2>{{ s.scheme }}</h2>
             <p>{{ s.what_you_get }}</p>
@@ -63,6 +72,80 @@
   <footer class="site-footer">
     Built for INCLUCODE · Accessibility Software Track
   </footer>
+
+  <script src="{{ url_for('static', filename='voice.js') }}"></script>
+  <script>
+    function readResults() {
+      const cards = document.querySelectorAll('.scheme-card');
+      let text = `Found ${cards.length} schemes for you. `;
+
+      cards.forEach((card, i) => {
+        const name = card.querySelector('h2')?.textContent || '';
+        const benefit = card.querySelector('p')?.textContent || '';
+        text += `Scheme ${i + 1}: ${name}. ${benefit}. `;
+      });
+
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'en-IN';
+      utterance.rate = 0.9;
+      window.speechSynthesis.speak(utterance);
+    }
+
+    function stopReading() {
+      window.speechSynthesis.cancel();
+    }
+
+    // ---- Voice Mode: continuous, hands-free flow ----
+    document.addEventListener('DOMContentLoaded', function () {
+      VoiceMode.init(document.getElementById('voice-toggle'), document.getElementById('voice-status'));
+
+      const cardCount = document.querySelectorAll('.scheme-card').length;
+
+      VoiceMode.commands([
+        {
+          test: t => /\bread\b/.test(t),
+          action: function () {
+            VoiceMode.stopSpeaking();
+            readResults();
+          }
+        },
+        {
+          test: t => /new search|search again|start over/.test(t),
+          action: function () {
+            VoiceMode.speak('Starting a new search.', function () {
+              VoiceMode.navigate("{{ url_for('index') }}");
+            });
+          }
+        },
+        {
+          test: t => /scheme|open|number/.test(t),
+          action: function (t) {
+            const n = VoiceMode.extractNumber(t);
+            const card = document.querySelector(`.scheme-card[data-position="${n}"]`);
+            if (n && card) {
+              VoiceMode.speak(`Opening scheme ${n}.`, function () {
+                VoiceMode.navigate(card.getAttribute('href'));
+              });
+            } else {
+              VoiceMode.speak(`I didn't catch which scheme. You have ${cardCount} schemes. Please say scheme and a number, like scheme one.`);
+            }
+          }
+        }
+      ], function fallback() {
+        VoiceMode.speak('Say read to hear the schemes, scheme and a number to open one, or new search.');
+      });
+
+      if (VoiceMode.cameFromVoice()) {
+        VoiceMode.start();
+        if (cardCount > 0) {
+          VoiceMode.speak(`You have ${cardCount} schemes. Say read to hear them, scheme and a number to open one, or new search.`);
+        } else {
+          VoiceMode.speak('No matching schemes were found. Say new search to try again.');
+        }
+      }
+    });
+  </script>
 
 </body>
 </html>

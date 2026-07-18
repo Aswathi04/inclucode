@@ -1,92 +1,22 @@
-import os
-import re
-from flask import Flask, render_template, request, redirect, url_for, session
-from dotenv import load_dotenv
+from flask import Flask, render_template, request, session
 from rag import get_schemes
-
-load_dotenv()
+import os
 
 app = Flask(__name__)
-app.secret_key = os.getenv("FLASK_SECRET_KEY", "dev-secret-change-me")
+app.secret_key = os.urandom(24)
 
-
-def parse_schemes(raw_text: str) -> list[dict]:
-    """
-    Parses get_schemes() output into a list of scheme dicts.
-    Expected block format, separated by '---':
-
-    SCHEME: ...
-    WHAT YOU GET: ...
-    MALAYALAM: ...
-    DO YOU QUALIFY: ...
-    DOCUMENTS NEEDED:
-    1. ...
-    2. ...
-    NEXT STEP: ...
-    """
-    blocks = [b.strip() for b in raw_text.split("---") if b.strip()]
-    schemes = []
-
-    field_order = [
-        ("SCHEME", "scheme"),
-        ("WHAT YOU GET", "what_you_get"),
-        ("MALAYALAM", "malayalam"),
-        ("DO YOU QUALIFY", "qualify"),
-        ("DOCUMENTS NEEDED", "documents_raw"),
-        ("NEXT STEP", "next_step"),
-    ]
-    labels = [f[0] for f in field_order]
-
-    for idx, block in enumerate(blocks):
-        pattern = "|".join(re.escape(l) + r":" for l in labels)
-        parts = re.split(f"({pattern})", block)
-
-        data = {}
-        current_key = None
-        for part in parts:
-            part_stripped = part.strip()
-            if not part_stripped:
-                continue
-            matched_label = next(
-                (label for label, key in field_order if part_stripped == f"{label}:"),
-                None
-            )
-            if matched_label:
-                current_key = dict(field_order)[matched_label]
-            elif current_key:
-                data[current_key] = data.get(current_key, "") + part_stripped + " "
-
-        if "scheme" not in data:
-            continue
-
-        documents = []
-        if "documents_raw" in data:
-            for line in data["documents_raw"].splitlines():
-                line = line.strip()
-                line = re.sub(r"^\d+\.\s*", "", line)
-                if line:
-                    documents.append(line)
-
-        schemes.append({
-            "id": idx,
-            "scheme": data.get("scheme", "").strip(),
-            "what_you_get": data.get("what_you_get", "").strip(),
-            "malayalam": data.get("malayalam", "").strip(),
-            "qualify": data.get("qualify", "").strip(),
-            "documents": documents,
-            "next_step": data.get("next_step", "").strip(),
-        })
-
-    return schemes
-
-
-@app.route("/", methods=["GET"])
+@app.route("/")
 def index():
     return render_template("index.html")
 
-
-@app.route("/results", methods=["POST"])
+@app.route("/results", methods=["GET", "POST"])
 def results():
+    if request.method == "GET":
+        schemes = session.get("schemes")
+        if schemes is None:
+            return redirect(url_for("index"))
+        return render_template("results.html", schemes=schemes, profile=session.get("profile"))
+
     disability = request.form.get("disability", "").strip()
     age = request.form.get("age", "").strip()
     district = request.form.get("district", "").strip()
@@ -100,19 +30,40 @@ def results():
     session["schemes"] = schemes
     session["profile"] = {"disability": disability, "age": age, "district": district}
 
-    return render_template("results.html", schemes=schemes)
+    return render_template("results.html", schemes=schemes, profile=session["profile"])
 
-
-@app.route("/detail/<int:scheme_id>", methods=["GET"])
+@app.route("/detail/<int:scheme_id>")
 def detail(scheme_id):
     schemes = session.get("schemes", [])
-    scheme = next((s for s in schemes if s["id"] == scheme_id), None)
+    match = next((s for s in schemes if s.get("id") == scheme_id), None)
+    if match:
+        return render_template("detail.html", scheme=match)
+    return "Scheme not found", 404
 
-    if scheme is None:
-        return redirect(url_for("index"))
-
-    return render_template("detail.html", scheme=scheme)
-
+def parse_schemes(raw_text: str) -> list:
+    schemes = []
+    blocks = raw_text.split("---")
+    for i, block in enumerate(blocks):
+        block = block.strip()
+        if not block:
+            continue
+        scheme = {"id": i}
+        for line in block.split("\n"):
+            if line.startswith("SCHEME:"):
+                scheme["scheme"] = line.replace("SCHEME:", "").strip()
+            elif line.startswith("WHAT YOU GET:"):
+                scheme["what_you_get"] = line.replace("WHAT YOU GET:", "").strip()
+            elif line.startswith("MALAYALAM:"):
+                scheme["benefit_ml"] = line.replace("MALAYALAM:", "").strip()
+            elif line.startswith("DO YOU QUALIFY:"):
+                scheme["qualify"] = line.replace("DO YOU QUALIFY:", "").strip()
+            elif line.startswith("DOCUMENTS NEEDED:"):
+                scheme["documents"] = line.replace("DOCUMENTS NEEDED:", "").strip()
+            elif line.startswith("NEXT STEP:"):
+                scheme["next_step"] = line.replace("NEXT STEP:", "").strip()
+        if scheme.get("scheme"):
+            schemes.append(scheme)
+    return schemes
 
 if __name__ == "__main__":
-       app.run(debug=False)
+    app.run(debug=True)

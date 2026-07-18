@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-
   <header class="site-header">
     <div class="header-inner">
       <svg class="mark" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -20,57 +19,103 @@
         <span class="brand-mal">വഴികാട്ടി</span>
         <span class="brand-en">Vazhikaatti · Accessible Scheme Navigator</span>
       </div>
+      <button type="button" id="voice-toggle" class="voice-toggle">🎙️ Voice mode · ശബ്ദ മോഡ്</button>
+      <span id="voice-status" class="voice-status"></span>
     </div>
     <div class="kasavu-border"></div>
   </header>
-
   <main>
-    <div class="card detail-header">
-      <div class="detail-eyebrow">Government Scheme</div>
-      <h1>{{ scheme.scheme }}</h1>
-
-      <div class="detail-section">
-        <h3>What you get</h3>
-        <div class="lang-block">
-          <span class="lang-tag">ENGLISH</span>
-          <p style="margin:0;">{{ scheme.what_you_get }}</p>
-        </div>
-        <div class="lang-block">
-          <span class="lang-tag">മലയാളം</span>
-          <p style="margin:0;">{{ scheme.malayalam }}</p>
-        </div>
+    <a href="{{ url_for('results') }}" class="back-link">← Back to results</a>
+    <div class="detail-card">
+      <div class="detail-header">
+        <h1>{{ scheme.scheme }}</h1>
+        {% if scheme.qualify %}
+          {% set q = scheme.qualify|lower %}
+          <span class="qualify-badge {% if 'likely' in q or 'yes' in q %}likely{% elif 'check' in q %}check{% endif %}">
+            {{ scheme.qualify.split(',')[0].split('.')[0] }}
+          </span>
+        {% endif %}
       </div>
-
-      <div class="detail-section">
-        <h3>Do you qualify</h3>
-        <p style="margin:0;">{{ scheme.qualify }}</p>
+      <div class="detail-voice">
+        <button type="button" onclick="readDetail()">🔊 Read aloud · വായിക്കുക</button>
+        <button type="button" onclick="stopReading()">⏹ Stop</button>
       </div>
-
-      {% if scheme.documents %}
-        <div class="detail-section">
-          <h3>Documents needed</h3>
-          <ul class="doc-list">
-            {% for doc in scheme.documents %}
-              <li>{{ doc }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-      {% endif %}
-
-      <div class="next-step-card">
-        <h3>Next step</h3>
-        <p>{{ scheme.next_step }}</p>
+      <div class="detail-section">
+        <h2>What you get · ലഭിക്കുന്നത്</h2>
+        <p id="what-you-get">{{ scheme.what_you_get }}</p>
+        {% if scheme.benefit_ml %}
+          <p class="malayalam" id="benefit-ml">{{ scheme.benefit_ml }}</p>
+        {% endif %}
+      </div>
+      <div class="detail-section">
+        <h2>Documents needed · ആവശ്യമായ രേഖകൾ</h2>
+        <p id="documents">{{ scheme.documents }}</p>
+      </div>
+      <div class="detail-section next-step-box">
+        <h2>Next step · അടുത്ത ഘട്ടം</h2>
+        <p id="next-step">{{ scheme.next_step }}</p>
+      </div>
+      <div class="detail-disclaimer">
+        ⚠ Scheme details last verified July 2026. Confirm at your local office before applying.
       </div>
     </div>
-
-    <a href="javascript:history.back()" class="back-link">← Back to your schemes</a>
-    <br>
-    <a href="{{ url_for('index') }}" class="back-link">Start a new search</a>
+    <a href="{{ url_for('index') }}" class="back-link">← Search again</a>
   </main>
-
   <footer class="site-footer">
     Built for INCLUCODE · Accessibility Software Track
   </footer>
+  <script src="{{ url_for('static', filename='voice.js') }}"></script>
+  <script>
+    function readDetail() {
+      const name = document.querySelector('h1')?.textContent || '';
+      const benefit = document.getElementById('what-you-get')?.textContent || '';
+      const documents = document.getElementById('documents')?.textContent || '';
+      const nextStep = document.getElementById('next-step')?.textContent || '';
+      const text = `${name}. What you get: ${benefit}. Documents needed: ${documents}. Next step: ${nextStep}.`;
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'en-IN';
+      utterance.rate = 0.9;
+      window.speechSynthesis.speak(utterance);
+    }
+    function stopReading() {
+      window.speechSynthesis.cancel();
+    }
 
+    // ---- Voice Mode: continuous, hands-free flow ----
+    document.addEventListener('DOMContentLoaded', function () {
+      VoiceMode.init(document.getElementById('voice-toggle'), document.getElementById('voice-status'));
+
+      VoiceMode.commands([
+        {
+          test: t => /\bread\b/.test(t),
+          action: function () { VoiceMode.stopSpeaking(); readDetail(); }
+        },
+        {
+          test: t => /go back|back to results|\bback\b/.test(t),
+          action: function () {
+            VoiceMode.speak('Going back to your schemes.', function () {
+              VoiceMode.navigate("{{ url_for('results') }}");
+            });
+          }
+        },
+        {
+          test: t => /new search|search again|start over/.test(t),
+          action: function () {
+            VoiceMode.speak('Starting a new search.', function () {
+              VoiceMode.navigate("{{ url_for('index') }}");
+            });
+          }
+        }
+      ], function fallback() {
+        VoiceMode.speak('Say read to hear the details, go back for your scheme list, or new search.');
+      });
+
+      if (VoiceMode.cameFromVoice()) {
+        VoiceMode.start();
+        VoiceMode.speak('Say read to hear the details, go back for your scheme list, or new search.');
+      }
+    });
+  </script>
 </body>
 </html>

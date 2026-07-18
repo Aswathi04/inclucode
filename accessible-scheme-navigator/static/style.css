@@ -422,3 +422,40 @@ a:focus-visible {
   .hero h1 { font-size: 1.6rem; }
   .card { padding: 22px 18px; }
 }
+/* -------- voice mode toggle (header) -------- */
+.header-inner {
+  flex-wrap: wrap;
+  row-gap: 8px;
+}
+
+.voice-toggle {
+  margin-left: auto;
+  min-height: 40px;
+  padding: 8px 16px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--palm);
+  background: var(--cream-deep);
+  border: 2px solid var(--palm);
+  border-radius: 999px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.voice-toggle:hover {
+  background: var(--palm);
+  color: var(--white);
+}
+
+.voice-status {
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  min-width: 90px;
+}
+
+@media (max-width: 480px) {
+  .voice-toggle {
+    margin-left: 0;
+  }
+}
