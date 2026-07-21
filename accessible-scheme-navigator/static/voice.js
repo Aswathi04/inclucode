@@ -38,7 +38,7 @@ const VoiceMode = (() => {
   // stops the recognizer's own onend from restarting it prematurely.
   function speak(text, afterSpeak) {
     speaking = true;
-    if (recognition) { try { recognition.abort(); } catch (e) {} }
+    if (recognition) { try { recognition.abort(); } catch (e) { } }
     window.speechSynthesis.cancel();
     setStatus('🔊 Speaking · സംസാരിക്കുന്നു');
     const utterance = new SpeechSynthesisUtterance(text);
@@ -130,7 +130,7 @@ const VoiceMode = (() => {
   function stop() {
     listening = false;
     speaking = false;
-    if (recognition) { try { recognition.abort(); } catch (e) {} }
+    if (recognition) { try { recognition.abort(); } catch (e) { } }
     stopSpeaking();
     setStatus('');
     if (toggleBtn) toggleBtn.textContent = '🎙️ Voice mode · ശബ്ദ മോഡ്';
@@ -165,4 +165,28 @@ const VoiceMode = (() => {
     speak, stopSpeaking, navigate, extractNumber,
     supported, isListening, cameFromVoice
   };
+})();
+
+// ============================================================
+// Intro sequence — hero zoom, fading out to reveal the real
+// page underneath. Guarded on #screen-hero existing, so it's a
+// silent no-op on any page that doesn't have it.
+// ============================================================
+(function () {
+  const hero = document.getElementById('screen-hero');
+  if (!hero) return;
+
+  const START_DELAY = 400;
+  const ZOOM_DURATION = 3000;
+  const FADE_LEAD = 0.72;
+
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      hero.classList.add('zoom');
+    }, START_DELAY);
+
+    setTimeout(() => {
+      hero.classList.add('handoff');
+    }, START_DELAY + ZOOM_DURATION * FADE_LEAD);
+  });
 })();
