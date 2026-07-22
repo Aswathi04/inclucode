@@ -10,8 +10,8 @@
 
   {% include "_header.html" %}
 
-  <main>
-    <div class="card">
+  <main class="results-main">
+    <div class="card results-card">
     <div class="results-header">
       <h1>Schemes you may qualify for</h1>
       {% if profile %}
@@ -45,12 +45,12 @@
         <h2>No matching schemes found</h2>
         <p>Try adjusting the disability type or district and search again.</p>
         <br>
-        <a href="{{ url_for('index') }}" class="btn-ghost btn" style="width:auto; display:inline-flex; padding:12px 24px;">Search again</a>
+        <a href="{{ url_for('index') }}" class="voice-toggle results-search-again">Search again</a>
       </div>
     {% endif %}
 
     {% if schemes %}
-      <a href="{{ url_for('index') }}" class="back-link">← Search again</a>
+      <a href="{{ url_for('index') }}" class="voice-toggle results-search-again results-search-back">← Search again</a>
     {% endif %}
     </div>
   </main>
