@@ -23,7 +23,7 @@
       <form method="POST" action="{{ url_for('results') }}" id="scheme-form">
 
         <div class="field">
-          <label for="disability">Disability type · വൈകല്യത്തിന്റെ തരം</label>
+          <label for="disability"><span class="field-label-en">Disability type</span> · വൈകല്യത്തിന്റെ തരം</label>
           <select id="disability" name="disability" required>
             <option value="" disabled selected>Choose one · തിരഞ്ഞെടുക്കുക</option>
             <option value="Locomotor disability (lower limb)">Locomotor disability — lower limb</option>
@@ -36,12 +36,12 @@
         </div>
 
         <div class="field">
-          <label for="age">Age · പ്രായം</label>
+          <label for="age"><span class="field-label-en">Age</span> · പ്രായം</label>
           <input type="number" id="age" name="age" min="0" max="120" required placeholder="e.g. 22">
         </div>
 
         <div class="field">
-          <label for="district">District · ജില്ല</label>
+          <label for="district"><span class="field-label-en">District</span> · ജില്ല</label>
           <select id="district" name="district" required>
             <option value="" disabled selected>Choose your district · ജില്ല തിരഞ്ഞെടുക്കുക</option>
             <option>Thiruvananthapuram</option>
@@ -60,12 +60,6 @@
             <option>Kasaragod</option>
           </select>
           <span class="hint">This helps us point you to the right district office.</span>
-        </div>
-
-        <div class="field">
-          <button type="button" id="mic-btn" onclick="startListening()">
-            🎤 Speak instead · സംസാരിക്കുക
-          </button>
         </div>
 
         <button type="submit" class="btn" id="submit-btn">
