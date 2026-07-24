@@ -1,29 +1,55 @@
-SCHEME NAME: National Scholarship for Persons with Disabilities DEPARTMENT: Ministry of Social Justice and Empowerment (Central Government) WHO CAN APPLY: All 21 recognized disabilities (minimum 40% disability). Age: School and college students. Income limit: Varies by level (e.g., up to Rs. 2.5 lakh/year family income for pre-matric/post-matric). Check with local office for current limits. WHAT YOU GET: Financial support covering tuition fees, book allowances, and a maintenance allowance to ensure you can complete your education. DOCUMENTS NEEDED:
-Disability Certificate (minimum 40%)
-Income Certificate
-Aadhaar Card
-Previous year's mark sheet
-Fee receipt of current course WHERE TO APPLY: National Scholarship Portal (NSP) online. HOW TO APPLY:
-Go to the National Scholarship Portal (scholarships.gov.in).
-Register as a new student using your Aadhaar number.
-Fill in the online form and upload scanned copies of your documents.
-Submit the application online so your school or college can verify it.
-SCHEME NAME: NHFDC Loans for Disabled Persons DEPARTMENT: National Handicapped Finance and Development Corporation (NHFDC) WHO CAN APPLY: All recognized disabilities (minimum 40% disability). Age: 18 years and above. Income limit: No strict income limit, but preference is given to lower-income groups. WHAT YOU GET: Low-interest microfinance, education loans, or business loans to help you become financially independent or fund higher studies. DOCUMENTS NEEDED:
-Disability Certificate (minimum 40%)
-Aadhaar Card and PAN Card
-Project report (for business loans) or admission letter (for education loans)
-Guarantor details or collateral documents WHERE TO APPLY: Apply through the state channelizing agency (KSHPWC in Kerala) or partner banks like Punjab National Bank. HOW TO APPLY:
-Decide if you need an education loan or a business loan.
-Contact KSHPWC or a participating public sector bank.
-Fill out the NHFDC loan application form.
-Submit the form with your business plan or college admission proof and guarantee documents.
-SCHEME NAME: National Trust Schemes (Niramaya Health Insurance) DEPARTMENT: National Trust (Ministry of Social Justice) WHO CAN APPLY: Persons with Autism, Cerebral Palsy, Mental Retardation (Intellectual Disability), and Multiple Disabilities. Age: No age limit. Income limit: No income limit for eligibility, but BPL families pay a lower enrollment fee. WHAT YOU GET: Affordable health insurance cover up to Rs. 1 Lakh per year, covering medical checkups, hospitalization, therapy, and corrective surgeries without requiring pre-medical tests. DOCUMENTS NEEDED:
-Disability Certificate (specifically for Autism, CP, MR, or Multiple Disabilities)
-Aadhaar Card
-BPL Card / Income Certificate (to qualify for the lower fee rate)
-Passport size photograph WHERE TO APPLY: Authorized Registered Organizations (RO) or NGOs of the National Trust in your district. HOW TO APPLY:
-Find a local NGO that is registered with the National Trust (list available on thentrust.gov.in).
-Go to the NGO with your documents and the enrollment fee (usually Rs. 250 for BPL, Rs. 500 for APL).
-The NGO will apply on the National Trust online portal on your behalf.
-You will receive a Niramaya Health Insurance e-card to use at hospitals.
+DOCUMENT: Central Government Schemes for Persons with Disabilities
 
+---
+SCHEME NAME: National Scholarship for Persons with Disabilities
+DEPARTMENT: Department of Empowerment of Persons with Disabilities (DEPwD), Ministry of Social Justice and Empowerment (Central Government)
+WHO CAN APPLY: Students with benchmark disability (40% or more), certified by a competent medical authority or shown on a UDID card. For both the Pre-Matric scholarship (Class 9-10) and the Post-Matric scholarship (Class 11 to Postgraduate), annual parental/guardian income must not exceed Rs. 2.5 lakh. Not more than two disabled children of the same parents can benefit at the same time (an exception is made for twins).
+WHAT YOU GET: A monthly maintenance allowance (amount depends on course and hostel/day scholar status), reimbursement of compulsory non-refundable college fees (up to a set annual cap for post-matric courses), an annual book allowance, and additional disability-related allowances (such as a reader's allowance).
+DOCUMENTS NEEDED:
+1. Disability Certificate (minimum 40%) or UDID Card
+2. Income Certificate
+3. Aadhaar Card
+4. Previous year's mark sheet
+5. Fee receipt of current course
+WHERE TO APPLY: The application itself is submitted online on the National Scholarship Portal (NSP) at scholarships.gov.in — there is no separate office where you submit paperwork in person. However, your school or college's NSP Nodal Officer must verify your application before it is forwarded, so you will need to coordinate with them.
+HOW TO APPLY:
+1. Go to the National Scholarship Portal (scholarships.gov.in).
+2. Complete One-Time Registration (OTR) using your Aadhaar number.
+3. Fill in the online form and upload scanned copies of your documents.
+4. Submit the application online so your school or college's Nodal Officer can verify it.
+
+NEW INFO: DEPwD also runs a related "Top Class Education Scholarship for Students with Disabilities," for graduate/postgraduate students admitted to specific notified institutions of excellence. This has a higher family income limit of Rs. 8 lakh/year and is applied for through the same National Scholarship Portal.
+
+---
+SCHEME NAME: NHFDC Loans for Disabled Persons
+DEPARTMENT: National Divyangjan Finance and Development Corporation (NHFDC, formerly National Handicapped Finance and Development Corporation)
+WHO CAN APPLY: Persons with a disability of 40% or more, as recognised under the RPWD Act 2016. Age requirements vary by loan type — general self-employment/business loans are typically for applicants aged 18 to 55, while education loans and some self-employment schemes routed through state agencies (like KSHPWC in Kerala) do not always apply the same upper age limit. Income criteria also vary by loan type: some loan categories require a minimum income level to show repayment capacity (rather than an income ceiling), so this is not a single fixed rule — check with the specific loan scheme.
+WHAT YOU GET: Low-interest loans for self-employment/business, education (in India or abroad), vehicle purchase, or micro-enterprise activities, generally at concessional interest rates (roughly in the 4-9% per year range depending on the scheme, with a rebate for women applicants). Exact rates and loan ceilings change periodically, so confirm the current terms when applying.
+DOCUMENTS NEEDED:
+1. Disability Certificate (minimum 40%)
+2. Aadhaar Card (PAN Card may also be required for larger loan amounts, depending on the lending agency's KYC rules)
+3. Project report (for business loans) or admission letter (for education loans)
+4. Guarantor details or collateral/property documents
+WHERE TO APPLY: Apply through the state channelizing agency — in Kerala this is KSHPWC — or through NHFDC's partner banks (such as Punjab National Bank and other nationalised banks).
+HOW TO APPLY:
+1. Decide if you need an education loan, self-employment loan, or another loan type.
+2. Contact KSHPWC or a participating public sector bank.
+3. Fill out the NHFDC loan application form for that specific scheme.
+4. Submit the form with your business plan or college admission proof and guarantee/collateral documents.
+
+---
+SCHEME NAME: National Trust Schemes (Niramaya Health Insurance)
+DEPARTMENT: The National Trust (under the Ministry of Social Justice and Empowerment)
+WHO CAN APPLY: Persons with Autism, Cerebral Palsy, Intellectual Disability (Mental Retardation), and Multiple Disabilities, as covered under the National Trust Act, 1999. No age limit. No income limit for eligibility, but BPL families pay a lower enrollment premium.
+WHAT YOU GET: Health insurance cover of up to Rs. 1 lakh per year, on a reimbursement basis, covering OPD treatment, regular medical checkups, preventive dentistry, non-surgical hospitalisation, corrective surgeries related to the disability, ongoing therapies, alternative medicine, and transportation costs. No pre-insurance medical test is required, and pre-existing conditions are not excluded.
+DOCUMENTS NEEDED:
+1. Disability Certificate (specifically for Autism, CP, Intellectual Disability, or Multiple Disabilities)
+2. UDID Card or UDID enrolment number
+3. BPL Card / Income Certificate (to qualify for the lower premium rate)
+4. Passport size photograph
+WHERE TO APPLY: This scheme has no single fixed government office — apply through an Authorised Registered Organization (RO) or NGO affiliated with the National Trust in your district. The specific NGO varies by district; ask your District Social Justice Office for the nearest one, or check the National Trust's website.
+HOW TO APPLY:
+1. Find a local NGO/Registered Organisation affiliated with the National Trust.
+2. Go to the RO with your documents and the enrollment premium (usually around Rs. 250 for BPL families, Rs. 500 for others; these figures are revised periodically).
+3. The RO will register your application on the National Trust's online system on your behalf.
+4. Once approved, you receive a Niramaya Health Insurance card to use when seeking treatment.

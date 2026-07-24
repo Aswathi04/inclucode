@@ -2,7 +2,9 @@ DOCUMENT: Rights of Persons with Disabilities (RPWD) Act, 2016
 
 ---
 21 RECOGNISED DISABILITIES AND DEFINITIONS
+
 The RPWD Act 2016 officially recognizes the following 21 disability categories:
+
 1. Blindness: Complete absence of sight or severe visual impairment even after best possible correction.
 2. Low-vision: Partial visual impairment where the person can still use vision to perform tasks with assistive devices.
 3. Leprosy Cured persons: Individuals cured of leprosy but left with loss of sensation, paresis, or physical deformities affecting daily life.
@@ -27,6 +29,7 @@ The RPWD Act 2016 officially recognizes the following 21 disability categories:
 
 ---
 SECTION 16: EDUCATION RIGHTS (DUTY OF EDUCATIONAL INSTITUTIONS)
+
 All government-funded and government-recognized educational institutions must provide inclusive education to children with disabilities. This means they must:
 - Admit students with disabilities without discrimination.
 - Provide accessible campuses, buildings, and facilities.
@@ -35,6 +38,7 @@ All government-funded and government-recognized educational institutions must pr
 
 ---
 SECTION 17: ADAPTED CURRICULUM AND INCLUSIVE EDUCATION MEASURES
+
 The government must take specific measures to make inclusive education a reality. This includes:
 - Conducting surveys every five years to identify school-going children with disabilities and assess their needs.
 - Training teachers and professionals in inclusive education techniques.
@@ -43,17 +47,20 @@ The government must take specific measures to make inclusive education a reality
 
 ---
 SECTION 31: RIGHT TO FREE EDUCATION
+
 Every child with a benchmark disability (having 40% or more of a recognized disability) between the ages of 6 and 18 years has the right to free education. This education can be pursued in a neighborhood school or in a special school, based on the child's or parents' choice.
 
 ---
 SECTIONS 20 AND 34: RIGHT TO EMPLOYMENT
+
 SECTION 20 (Non-Discrimination): No government establishment can discriminate against any person with a disability in any matter related to employment, including recruitment and promotion. Employers must provide reasonable accommodations. If an employee acquires a disability during their service, they cannot be fired or demoted; they must be shifted to a suitable post with the same pay or kept on a supernumerary post until retirement.
-SECTION 34 (Reservation): All government establishments must reserve a minimum of 4% of total vacancies for persons with benchmark disabilities. 
+
+SECTION 34 (Reservation): All government establishments must reserve a minimum of 4% of total vacancies for persons with benchmark disabilities.
 
 ---
 SECTION 42: ACCESSIBLE ICT MANDATE (INFORMATION AND COMMUNICATION TECHNOLOGY)
+
 The government is legally mandated to ensure that all information and communication technology is accessible to persons with disabilities. This means:
 - All content available in audio, print, and electronic media must be provided in an accessible format.
 - Electronic media (like videos, television, and apps) must include features like audio descriptions for the visually impaired, sign language interpretation, and closed captioning for the hearing impaired.
 - Electronic goods and everyday equipment must be built using universal design principles so they can be easily used by everyone, regardless of disability.
-

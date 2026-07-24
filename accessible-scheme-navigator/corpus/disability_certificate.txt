@@ -1,0 +1,25 @@
+SCHEME: Disability Certificate Kerala
+FIELD: overview
+CONTENT: The Disability Certificate is an official government document that serves as proof of a person's disability. It is required because all government schemes, financial aid, pensions, and job reservations ask for this certificate to confirm that the person is legally eligible for the benefits.
+
+SCHEME: Disability Certificate Kerala
+FIELD: eligibility
+CONTENT: Any citizen with a physical or mental disability can apply for an assessment. However, to qualify for most government benefits and schemes, the medical board must certify that the person has at least a forty percent disability. This forty percent threshold is the minimum requirement to be officially recognized for support.
+
+SCHEME: Disability Certificate Kerala
+FIELD: process
+CONTENT: First, submit an online application. Once the application status shows as submitted, visit the specific government hospital or Chief Medical Officer's office that you selected during the application. At the hospital, specialist doctors will examine your condition and prepare a medical report. A medical board will then review this report to determine the exact type and percentage of your disability. If approved, your certificate is generated online and dispatched to your address.
+
+SCHEME: Disability Certificate Kerala
+FIELD: documents
+CONTENT: 1. A recent colour photograph 2. Aadhaar card details 3. Address proof 4. Any old or manually issued disability certificate if you already have one.
+
+SCHEME: Disability Certificate Kerala
+FIELD: udid_card
+CONTENT: The Unique Disability ID or UDID card is a permanent smart card issued alongside your electronic disability certificate. It acts as a single, universally accepted identity card so you do not have to carry bulky paper certificates to prove your disability. You can apply for both the certificate and the UDID card together by registering online at the swavlambancard.gov.in portal.
+
+SCHEME: Disability Certificate Kerala
+FIELD: rejection
+CONTENT: If your application is rejected or if you disagree with the disability percentage given by the medical board, you have the right to file an appeal for reassessment. You can submit an appeal to the designated Appellate Authority or file a formal complaint with the State Commissioner for Persons with Disabilities in Kerala.
+
+===

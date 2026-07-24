@@ -18,8 +18,7 @@ For each scheme, respond in this EXACT format:
 SCHEME: [scheme name in English and Malayalam]
 WHAT YOU GET: [plain simple English, 1-2 sentences]
 MALAYALAM: [same as above but in simple conversational Malayalam]
-DO YOU QUALIFY: [yes/likely/check - with brief reason]
-DOCUMENTS NEEDED: [numbered list]
+DO YOU QUALIFY: [Start with yes/likely/check. Then one sentence explaining exactly why — which specific criterion confirms it and which criterion still needs verification. Example: "Likely — your age qualifies. Bring your disability certificate to confirm the income threshold at the office."]DOCUMENTS NEEDED: [numbered list]
 NEXT STEP: [one sentence - which office, what to ask for]
 ---
 If no schemes are found for this profile, say so clearly.

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disability Certificate Guide · വഴികാട്ടി</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <style>
+    .certificate-guide-wrapper {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .certificate-guide-card {
+      background: var(--white);
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    .certificate-guide-header {
+      background: linear-gradient(135deg, var(--palm) 0%, var(--palm-dark) 100%);
+      padding: 40px 32px;
+      color: var(--white);
+      text-align: center;
+    }
+
+    .certificate-guide-header h1 {
+      margin: 0 0 8px 0;
+      color: var(--white);
+      font-size: 32px;
+    }
+
+    .certificate-guide-header p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 18px;
+    }
+
+    .certificate-guide-content {
+      padding: 40px 32px;
+    }
+
+    .certificate-guide-section {
+      margin-bottom: 40px;
+    }
+
+    .certificate-guide-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .certificate-guide-section h2 {
+      color: var(--palm-dark);
+      font-size: 22px;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 3px solid var(--gold);
+      display: inline-block;
+    }
+
+    .certificate-guide-section p {
+      color: var(--ink);
+      font-size: 16px;
+      line-height: 1.7;
+      margin: 16px 0;
+      font-family: var(--font-body);
+    }
+
+    .certificate-guide-section ol {
+      color: var(--ink);
+      font-size: 16px;
+      line-height: 1.8;
+      padding-left: 24px;
+      font-family: var(--font-body);
+    }
+
+    .certificate-guide-section li {
+      margin-bottom: 12px;
+      color: var(--ink);
+    }
+
+    .certificate-guide-section .malayalam {
+      color: var(--ink-soft);
+      font-size: 14px;
+      margin-top: 12px;
+      font-style: italic;
+    }
+
+    .certificate-guide-box {
+      background: var(--gold-soft);
+      border-left: 4px solid var(--gold);
+      padding: 20px;
+      margin: 24px 0;
+      border-radius: 8px;
+    }
+
+    .certificate-guide-box p {
+      margin: 0;
+      font-weight: 500;
+    }
+
+    .certificate-guide-disclaimer {
+      background: var(--clay-soft);
+      border-radius: 8px;
+      padding: 20px;
+      margin-top: 40px;
+      border-left: 4px solid var(--clay);
+      font-size: 14px;
+      color: var(--ink);
+    }
+
+    .certificate-guide-back {
+      display: inline-flex;
+      align-items: center;
+      padding: 12px 20px;
+      background: var(--palm);
+      color: var(--white);
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      transition: background 0.2s;
+    }
+
+    .certificate-guide-back:hover {
+      background: var(--palm-dark);
+    }
+
+    .certificate-guide-back:active {
+      transform: scale(0.98);
+    }
+
+    @media (max-width: 600px) {
+      .certificate-guide-wrapper {
+        margin: 20px auto;
+      }
+
+      .certificate-guide-header {
+        padding: 30px 20px;
+      }
+
+      .certificate-guide-header h1 {
+        font-size: 26px;
+      }
+
+      .certificate-guide-content {
+        padding: 24px 20px;
+      }
+
+      .certificate-guide-section h2 {
+        font-size: 19px;
+      }
+
+      .certificate-guide-section p,
+      .certificate-guide-section ol {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  {% include "_header.html" %}
+
+  <main>
+    <div class="certificate-guide-wrapper">
+      <a href="#" onclick="window.history.back(); return false;" class="certificate-guide-back">← Back</a>
+
+      <div class="certificate-guide-card">
+        <div class="certificate-guide-header">
+          <h1>Disability Certificate Guide</h1>
+          <p class="malayalam">ഭിന്നശേഷി സർട്ടിഫിക്കറ്റ് എങ്ങനെ നേടാം</p>
+        </div>
+
+        <div class="certificate-guide-content">
+          <div class="certificate-guide-section">
+            <h2>Why you need this first</h2>
+            <p>Every government scheme for persons with disabilities requires a disability certificate showing 40% or more disability. Without it, you cannot apply for scholarships, pension, assistive devices, or any other benefit. Get this certificate before applying for anything else.</p>
+            <p class="malayalam">എല്ലാ സർക്കാർ പദ്ധതികൾക്കും ഭിന്നശേഷി സർട്ടിഫിക്കറ്റ് നിർബന്ധമാണ്.</p>
+          </div>
+
+          <div class="certificate-guide-section">
+            <h2>Step by step</h2>
+            <ol>
+              <li>Go to your nearest Government District Hospital or Medical College</li>
+              <li>Ask for the Medical Board — they assess disability certificates</li>
+              <li>Carry all your documents (listed below)</li>
+              <li>A board of doctors will assess your disability and assign a percentage</li>
+              <li>If 40% or above, the certificate is issued — usually the same day or within a week</li>
+              <li>Apply for your UDID card online using the certificate at swavlambancard.gov.in</li>
+            </ol>
+          </div>
+
+          <div class="certificate-guide-section">
+            <h2>Documents to carry</h2>
+            <ol>
+              <li>Aadhaar card</li>
+              <li>Ration card</li>
+              <li>Passport size photographs (4 copies)</li>
+              <li>Any existing medical records related to your disability</li>
+              <li>Age proof (birth certificate or SSLC book)</li>
+            </ol>
+          </div>
+
+          <div class="certificate-guide-section">
+            <h2>What is the UDID card?</h2>
+            <p>The Unique Disability ID (UDID) card is a national identity card for persons with disabilities. It is being made mandatory for many central government schemes. Apply online at swavlambancard.gov.in after you receive your disability certificate. It is free.</p>
+          </div>
+
+          <div class="certificate-guide-box">
+            <p>📍 <strong>Where to go:</strong> Your nearest Government District Hospital or Government Medical College. Ask at the reception for the Medical Board or the Disability Certificate counter. No appointment needed in most districts.</p>
+          </div>
+
+          <div class="certificate-guide-section">
+            <h2>If your application is rejected</h2>
+            <p>You can appeal to the State Commissioner for Persons with Disabilities, Kerala. Contact details are available at sjd.kerala.gov.in. You are entitled to a written explanation for any rejection.</p>
+          </div>
+
+          <div class="certificate-guide-disclaimer">
+            ⚠️ <strong>Important:</strong> This guide is accurate as of July 2026. Confirm current procedures at your local District Hospital before visiting.
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    Built for INCLUCODE · Accessibility Software Track
+  </footer>
+</body>
+</html> 

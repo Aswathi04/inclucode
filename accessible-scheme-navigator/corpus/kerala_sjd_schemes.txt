@@ -1,83 +1,59 @@
-SCHEME NAME: Post-Matric Scholarship for Disabled Students
-DEPARTMENT: Social Justice Department (SJD), Kerala
-WHO CAN APPLY: All recognized disabilities (minimum 40% disability), studying in Class 11 up to Post-Graduation. Income limit: Check with the local office for current limits.
-WHAT YOU GET: Financial assistance to help pay for tuition fees, study materials, and hostel expenses so you can continue your higher education without financial stress.
-DOCUMENTS NEEDED:
-Disability Certificate (minimum 40%)
-Income Certificate from Village Officer
-Aadhaar Card
-Bank passbook copy
-Mark list of the previous qualifying examination
-Certificate from the Head of the Educational Institution
-WHERE TO APPLY: Nearest District Social Justice Office or apply through the Head of your Institution.
-HOW TO APPLY:
-Get the application form from the Social Justice Office or your college/school.
-Fill out the form and attach all required documents.
-Submit the form to the Head of your Educational Institution.
-The institution will forward it to the District Social Justice Officer for approval.
-SCHEME NAME: Pre-Matric Scholarship for Disabled Students
-DEPARTMENT: Social Justice Department (SJD), Kerala
-WHO CAN APPLY: All recognized disabilities (minimum 40% disability), students studying from Class 1 to Class 10. Income limit: Check with local office for current limits.
-WHAT YOU GET: A regular monthly scholarship amount to help cover the costs of basic schooling, textbooks, and uniforms.
-DOCUMENTS NEEDED:
-Disability Certificate (minimum 40%)
-Income Certificate
-Aadhaar Card
-Bank passbook copy
-Certificate from the School Principal/Headmaster
-WHERE TO APPLY: Nearest District Social Justice Office or apply through your school.
-HOW TO APPLY:
-Collect the application form from your school or local Social Justice Office.
-Fill the application and attach copies of your documents.
-Submit it to your school's Headmaster or Principal.
-The school will send it to the District Social Justice Office for processing.
-SCHEME NAME: State Disability Pension (Vikalanga Pension)
-DEPARTMENT: Social Justice Department (SJD) / Kerala Social Security Mission
-WHO CAN APPLY: All recognized disabilities (minimum 40% disability). Age: No age limit (applies to children, adults, and the elderly). Income limit: Annual family income must be below Rs. 1,00,000.
-WHAT YOU GET: A regular monthly pension of Rs. 1,600 credited directly to your bank account. Persons with 75% or more disability may get an extra caregiver allowance of Rs. 1,000 per month.
-DOCUMENTS NEEDED:
-Disability Certificate from a Government Medical Board (minimum 40%)
-Income Certificate from Village Office
-Aadhaar Card
-Ration Card
-Bank passbook copy
-Self-declaration that you are not receiving other government pensions
-WHERE TO APPLY: Local Grama Panchayat, Municipality, or Corporation Office.
-HOW TO APPLY:
-Get the pension application form from your local Panchayat or Municipality office.
-Fill the form and attach all required documents.
-Submit the form back to the local body office.
-The application will be verified by the local Welfare Standing Committee before the pension starts.
-SCHEME NAME: Marriage Assistance to Daughters of Differently Abled Parents (Parinayam)
-DEPARTMENT: Social Justice Department (SJD), Kerala
-WHO CAN APPLY: Differently-abled women, or differently-abled parents conducting the marriage of their daughter. Age: The bride must be 18 years or older. Income limit: Annual family income must not exceed Rs. 1,00,000.
-WHAT YOU GET: A one-time financial grant of Rs. 30,000 to help cover marriage expenses.
-DOCUMENTS NEEDED:
-Disability Identity Card / Certificate
-Age proof of the bride (Birth Certificate or SSLC book)
-Income Certificate from the Village Officer
-Ration Card copy
-Marriage invitation card or marriage confirmation details
-Bank passbook copy
-WHERE TO APPLY: District Social Justice Office or via SUNEETHI Online Portal.
-HOW TO APPLY:
-Get the application form from the District Social Justice Office or register on the SUNEETHI online portal.
-Fill in the details of the bride and the disabled applicant.
-Attach the income certificate, disability proof, and marriage details.
-Submit the form to the District Social Justice Office for verification.
-SCHEME NAME: Artificial Limbs and Appliances Scheme
-DEPARTMENT: Social Justice Department (SJD), Kerala
-WHO CAN APPLY: Persons with physical or locomotor disabilities (minimum 40% disability). Age: All ages. Income limit: Annual family income must not exceed Rs. 1,00,000.
-WHAT YOU GET: Free assistive devices like artificial limbs, wheelchairs, tricycles, crutches, or hearing aids to help you move and live more independently.
-DOCUMENTS NEEDED:
-Disability Certificate (minimum 40%)
-Income Certificate from Village Office
-Aadhaar Card
-Passport size photograph
-Medical certificate stating the applicant can safely use the requested device
-WHERE TO APPLY: District Social Justice Office.
-HOW TO APPLY:
-Collect the form from the District Social Justice Office.
-Get a government doctor to certify that you need and can use the specific device (like a wheelchair).
-Attach your income and disability certificates.
-Submit the complete application to the District Social Justice Officer.
+SCHEME: Post-Matric Scholarship for Differently Abled Students (SJD Kerala)
+FIELD: overview
+CONTENT: This is a monthly scholarship from Kerala's Social Justice Department for disabled students studying from Class 11 (+1) up to Degree, Postgraduate, Polytechnic, Professional, and other higher courses, including hostel and day scholars.
+FIELD: eligibility
+CONTENT: You must have a disability of 40% or more, certified by a Medical Board. Your disability should be Blind, Deaf, Orthopedically Handicapped, or Mental Retardation (as per the department's listed categories). Your combined family annual income must be below Rs. 36,000. You must have scored at least 40% marks in your previous year's exam.
+FIELD: benefit
+CONTENT: Monthly scholarship amount depends on your course level: +1/+2/IT courses get Rs. 750 (day scholar) or Rs. 1,000 (hostel student); Degree, Polytechnic, and equivalent training courses get Rs. 1,000 (day scholar) or Rs. 1,500 (hostel student); Professional and PG courses get Rs. 1,000 (day scholar) or Rs. 1,500 (hostel student). Blind students also get a Reader's Allowance of Rs. 300–400 per month depending on course level.
+FIELD: documents
+CONTENT: 1. Filled application form 2. Attested copy of Disability Certificate from a Medical Board 3. Income certificate from the concerned Village Officer 4. Proof of admission/study in the current course
+FIELD: next_step
+CONTENT: Visit your District Social Justice Office within 3 months of the start of the academic year. Tell the officer, "I want to apply for the Scholarship for Differently Abled Students for my +1/degree/PG course," and ask them for the application form and current income/disability certificate requirements.
+===
+SCHEME: Pre-Matric Scholarship for Differently Abled Students (SJD Kerala)
+FIELD: overview
+CONTENT: This is a monthly scholarship from Kerala's Social Justice Department for disabled students studying from Class 1 to Class 10, meant to support their school education.
+FIELD: eligibility
+CONTENT: You must have a disability of 40% or more, certified by a Medical Board. Your disability should be Blind, Deaf, Orthopedically Handicapped, or Mental Retardation (as per the department's listed categories). Your combined family annual income must be below Rs. 36,000. You must have scored at least 40% marks in your previous year's exam.
+FIELD: benefit
+CONTENT: Monthly scholarship amount depends on your class: Class 1 to 4 students get Rs. 300 per month; Class 5 to 10 students get Rs. 500 per month. Blind students in these classes also get a Reader's Allowance of Rs. 200 per month.
+FIELD: documents
+CONTENT: 1. Filled application form 2. Attested copy of Disability Certificate from a Medical Board 3. Income certificate from the concerned Village Officer 4. School admission or study proof for the current year
+FIELD: next_step
+CONTENT: Visit your District Social Justice Office within 3 months of the start of the academic year. Tell the officer, "I want to apply for the Scholarship for Differently Abled Students for my child in Class [X]," and ask them for the application form and current documentation requirements.
+===
+SCHEME: State Disability Pension - Vikalanga Pension (Indira Gandhi National Disability Pension Scheme)
+FIELD: overview
+CONTENT: This is a monthly cash pension for people with disabilities in Kerala. It is actually implemented by Local Self-Government bodies (Panchayats, Municipalities, Corporations), not directly by the Social Justice Department, though it is commonly grouped with SJD welfare schemes and referred to locally as "Vikalanga Pension."
+FIELD: eligibility
+CONTENT: You must have a disability of 40% or more, certified by a Medical Board. Your combined family annual income must be Rs. 1,00,000 or below. You should not already be receiving any other government social welfare pension. You should not own a car or similar taxable vehicle, and should not be an income tax payer. There is no age limit for this pension.
+FIELD: benefit
+CONTENT: As of recent years, the pension amount is Rs. 1,600 per month for all Kerala social security pension categories including disability pension. People with 75% or more disability, or who are bedridden or need constant care, may get an additional caregiver allowance of around Rs. 1,000 per month. Please confirm the exact current amount at your local office, since pension amounts are revised by government order from time to time.
+FIELD: documents
+CONTENT: 1. Filled pension application form 2. Disability certificate from a government Medical Board (or UDID card) 3. Aadhaar card 4. Income certificate from the Village Officer 5. Bank or post office passbook copy 6. Ration card or residence proof 7. Passport-size photograph
+FIELD: next_step
+CONTENT: Visit your local Grama Panchayat, Municipality, or Corporation office (wherever you live). Ask for the Secretary or the pension section and say, "I want to apply for the Indira Gandhi National Disability Pension (Vikalanga Pension)," and ask them for the application form.
+===
+SCHEME: Marriage Assistance - Parinayam (SJD Kerala)
+FIELD: overview
+CONTENT: Parinayam is a Kerala Social Justice Department scheme that gives one-time financial help for the marriage of disabled women, or for the marriage of daughters of disabled parents.
+FIELD: eligibility
+CONTENT: Combined annual family income should not exceed Rs. 1,00,000. The bride must have completed 18 years of age at the time of applying. Assistance can be given for the marriage of up to 2 daughters in a family, but the application for the second daughter's marriage can only be made 3 years after the first grant was given.
+FIELD: benefit
+CONTENT: A one-time payment of Rs. 30,000 is given to the eligible beneficiary.
+FIELD: documents
+CONTENT: 1. Attested copy of Ration Card 2. Disability Identity Card 3. Birth Certificate (from Corporation/Municipality/Panchayat) showing the bride is the daughter of a disabled person, or the bride's own disability certificate if she is the disabled person 4. Family Income Certificate from the concerned Village Officer
+FIELD: next_step
+CONTENT: Visit your District Social Justice Office. Tell the officer, "I want to apply for Parinayam marriage assistance," and collect the application form from that office; you also submit the completed form with documents there.
+===
+SCHEME: Artificial Limbs and Appliances Scheme (SJD Kerala)
+FIELD: overview
+CONTENT: This Kerala Social Justice Department scheme provides free assistive devices, such as wheelchairs, smartphones with screen readers, Daisy players, CP wheelchairs, and talking calculators, to disabled persons to help with mobility, communication, and daily activities.
+FIELD: eligibility
+CONTENT: You must have a disability of 40% or more. Combined annual family income must not exceed Rs. 1,00,000. You must not have already received the same or a similar assistive device from any other government or non-government organisation. A Medical Board must confirm that you are capable of using the device you are applying for.
+FIELD: benefit
+CONTENT: You receive the assistive device itself (not cash), purchased by the department through open tender or from approved agencies, matched to your specific disability and need.
+FIELD: documents
+CONTENT: 1. Filled application form 2. Disability certificate from a Medical Board 3. Income certificate from the Village Officer 4. Medical Board recommendation confirming you can use the requested device
+FIELD: next_step
+CONTENT: Watch for the newspaper or Anganwadi centre announcement inviting applications, or directly visit your District Social Justice Office and say, "I want to apply for the assistive devices scheme for disabled persons," and ask for the application form. Your local Anganwadi worker or Child Development Project Officer can also help you apply.

@@ -1,0 +1,107 @@
+SCHEME: Free Bus Pass for Persons with Disabilities (Kerala KSRTC)
+FIELD: overview
+CONTENT: This scheme provides free or highly subsidized travel in state-run KSRTC buses to help persons with disabilities travel for education, medical needs, and daily work without financial burden.
+SCHEME: Free Bus Pass for Persons with Disabilities (Kerala KSRTC)
+FIELD: eligibility
+CONTENT: Persons residing in Kerala who have a certified disability of forty percent or more. Some severe disability categories may also be allowed to bring one escort or helper at a reduced fare.
+SCHEME: Free Bus Pass for Persons with Disabilities (Kerala KSRTC)
+FIELD: benefit
+CONTENT: A dedicated photo identity pass that allows free or concessional bus travel on standard KSRTC routes within the state.
+SCHEME: Free Bus Pass for Persons with Disabilities (Kerala KSRTC)
+FIELD: documents
+CONTENT: 1. Disability certificate or UDID card 2. Aadhaar card 3. Passport size photographs 4. Residence proof.
+SCHEME: Free Bus Pass for Persons with Disabilities (Kerala KSRTC)
+FIELD: next_step
+CONTENT: Visit the nearest KSRTC Depot or Station Master's office. Tell the officer, "I want to apply for the concession bus pass for persons with disabilities and need to submit my documents."
+
+===
+
+SCHEME: Unemployment Allowance for Persons with Disabilities (Kerala)
+FIELD: overview
+CONTENT: A financial support program for educated disabled youth who are actively looking for a job but have not yet been able to find employment.
+SCHEME: Unemployment Allowance for Persons with Disabilities (Kerala)
+FIELD: eligibility
+CONTENT: Persons with disabilities who are registered with the local Employment Exchange for a specific number of years and remain unemployed. The applicant must fall within the permitted working age limit and meet family income rules.
+SCHEME: Unemployment Allowance for Persons with Disabilities (Kerala)
+FIELD: benefit
+CONTENT: A monthly financial allowance deposited directly into the applicant's bank account while they continue their job search.
+SCHEME: Unemployment Allowance for Persons with Disabilities (Kerala)
+FIELD: documents
+CONTENT: 1. Employment Exchange registration card 2. Disability certificate 3. Income certificate from the village officer 4. Aadhaar card 5. Bank account passbook.
+SCHEME: Unemployment Allowance for Persons with Disabilities (Kerala)
+FIELD: next_step
+CONTENT: Visit your district or local Employment Exchange office. Tell the clerk, "I am registered here and want to submit my application for the unemployment allowance for disabled persons."
+
+===
+
+SCHEME: District Early Intervention Centres (DEIC Kerala)
+FIELD: overview
+CONTENT: DEICs are specialized healthcare facilities set up in district hospitals to identify delays in a child's development as early as possible and provide immediate medical and therapy services under one roof.
+SCHEME: District Early Intervention Centres (DEIC Kerala)
+FIELD: eligibility
+CONTENT: Children from birth up to six years of age who have a disability, are at risk of developmental delays, or suffer from specific childhood diseases and deficiencies.
+SCHEME: District Early Intervention Centres (DEIC Kerala)
+FIELD: benefit
+CONTENT: Free, comprehensive support including speech therapy, physical therapy, vision and hearing assessments, psychological support, and early special education.
+SCHEME: District Early Intervention Centres (DEIC Kerala)
+FIELD: documents
+CONTENT: 1. Child's birth certificate 2. Child's or parent's Aadhaar card 3. Medical records or referral letter from a doctor 4. Parent's identity proof.
+SCHEME: District Early Intervention Centres (DEIC Kerala)
+FIELD: next_step
+CONTENT: Visit the District General Hospital and go to the DEIC wing. Tell the receptionist, "I was told to bring my child here for a developmental assessment and early intervention therapies."
+
+===
+
+SCHEME: Unique Disability ID (UDID) Card
+FIELD: overview
+CONTENT: The UDID card is a national, permanent smart card for persons with disabilities. It matters because it replaces all paper disability certificates, acting as a single proof of disability that is valid across all states in India for every government scheme.
+SCHEME: Unique Disability ID (UDID) Card
+FIELD: eligibility
+CONTENT: Any Indian citizen who has a physical, mental, or neurological disability recognized under the law.
+SCHEME: Unique Disability ID (UDID) Card
+FIELD: benefit
+CONTENT: You get a smart card with a QR code that stores all your medical details. You will no longer need to carry bulky paper certificates to prove your disability for pensions, train concessions, or job applications.
+SCHEME: Unique Disability ID (UDID) Card
+FIELD: documents
+CONTENT: 1. Aadhaar card 2. Recent colour passport size photograph 3. Scanned signature or thumb impression 4. Existing old disability certificate if you have one.
+SCHEME: Unique Disability ID (UDID) Card
+FIELD: next_step
+CONTENT: Visit your nearest Akshaya Centre or Common Service Centre. Tell the operator, "I want to apply for a new UDID card on the Swavlamban portal and need help uploading my documents."
+
+===
+
+SCHEME: Deen Dayal Disabled Rehabilitation Scheme (DDRS)
+FIELD: overview
+CONTENT: This is a central government scheme that provides financial grants to non-governmental organizations (NGOs) so they can run special schools, vocational training centers, and halfway homes for persons with disabilities.
+SCHEME: Deen Dayal Disabled Rehabilitation Scheme (DDRS)
+FIELD: eligibility
+CONTENT: Direct funding is given to registered NGOs that have been working in the disability sector for at least two years. Any person with a disability is eligible to join the programs run by these funded NGOs.
+SCHEME: Deen Dayal Disabled Rehabilitation Scheme (DDRS)
+FIELD: benefit
+CONTENT: Disabled individuals get access to free or heavily subsidized education, physical rehabilitation, psychological counseling, and skill training provided by the NGOs.
+SCHEME: Deen Dayal Disabled Rehabilitation Scheme (DDRS)
+FIELD: documents
+CONTENT: 1. Disability certificate 2. Aadhaar card 3. Educational certificates (if applying for vocational training).
+SCHEME: Deen Dayal Disabled Rehabilitation Scheme (DDRS)
+FIELD: next_step
+CONTENT: Visit the District Social Justice Office. Tell the officer, "I want a list of local NGOs or special schools funded under the DDRS scheme so I can enroll in a rehabilitation program."
+
+===
+
+SCHEME: Sugamya Bharat Abhiyan (Accessible India Campaign)
+FIELD: overview
+CONTENT: This is a nationwide campaign focused on accessibility rights. It ensures that persons with disabilities can easily enter and use government buildings, railway stations, airports, and government websites without facing any physical or digital barriers.
+SCHEME: Sugamya Bharat Abhiyan (Accessible India Campaign)
+FIELD: eligibility
+CONTENT: Any citizen who encounters a barrier—such as a public building without a wheelchair ramp, a station without an elevator, or a website that cannot be read by screen readers.
+SCHEME: Sugamya Bharat Abhiyan (Accessible India Campaign)
+FIELD: benefit
+CONTENT: Citizens have the right to demand that public spaces be redesigned with ramps, accessible toilets, braille signage, and auditory signals.
+SCHEME: Sugamya Bharat Abhiyan (Accessible India Campaign)
+FIELD: documents
+CONTENT: 1. A photograph or video showing the inaccessible location 2. The exact address and name of the building 3. A written complaint explaining why the space is not accessible.
+SCHEME: Sugamya Bharat Abhiyan (Accessible India Campaign)
+FIELD: next_step
+CONTENT: Download the Sugamya Bharat App on your smartphone to upload a photo, or visit the office of the State Commissioner for Persons with Disabilities. Tell the staff, "I want to file a formal accessibility complaint against a public building that does not have ramps or lifts."
+
+===
