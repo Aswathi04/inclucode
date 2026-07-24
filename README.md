@@ -1,7 +1,3 @@
-Here is a comprehensive README structure for Vazhikatti tailored for your GitHub repository. You can copy and paste this directly into your `README.md` file.
-
----
-
 # VAZHIKATTI 🧭
 
 **Code Inclusive. Build Accessible. Empower Independence.**
