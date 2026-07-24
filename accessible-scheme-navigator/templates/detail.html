@@ -9,7 +9,7 @@
 <body>
   {% include "_header.html" %}
   <main>
-    <a href="{{ url_for('results') }}" class="back-link">← Back to results</a>
+    <a href="{{ url_for('results') }}" class="back-link voice-toggle detail-nav-button">← Back to results</a>
     <div class="card detail-card">
       <div class="detail-header">
         <h1>{{ scheme.scheme }}</h1>
@@ -21,29 +21,29 @@
         {% endif %}
       </div>
       <div class="detail-voice">
-        <button type="button" onclick="readDetail()">🔊 Read aloud · വായിക്കുക</button>
-        <button type="button" onclick="stopReading()">⏹ Stop</button>
+        <button type="button" class="voice-toggle" onclick="readDetail()">🔊 Read aloud · വായിക്കുക</button>
+        <button type="button" class="voice-toggle" onclick="stopReading()">⏹ Stop</button>
       </div>
       <div class="detail-section">
-        <h2>What you get · ലഭിക്കുന്നത്</h2>
+        <h2>What you get · ലഭിക്കുന്നത്:</h2>
         <p id="what-you-get">{{ scheme.what_you_get }}</p>
         {% if scheme.benefit_ml %}
           <p class="malayalam" id="benefit-ml">{{ scheme.benefit_ml }}</p>
         {% endif %}
       </div>
       <div class="detail-section">
-        <h2>Documents needed · ആവശ്യമായ രേഖകൾ</h2>
+        <h2>Documents needed · ആവശ്യമായ രേഖകൾ:</h2>
         <p id="documents">{{ scheme.documents }}</p>
       </div>
       <div class="detail-section next-step-box">
-        <h2>Next step · അടുത്ത ഘട്ടം</h2>
+        <h2>Next step · അടുത്ത ഘട്ടം:</h2>
         <p id="next-step">{{ scheme.next_step }}</p>
       </div>
       <div class="detail-disclaimer">
         ⚠ Scheme details last verified July 2026. Confirm at your local office before applying.
       </div>
     </div>
-    <a href="{{ url_for('index') }}" class="back-link">← Search again</a>
+    <a href="{{ url_for('index') }}" class="back-link voice-toggle detail-nav-button">← Search again</a>
   </main>
   <footer class="site-footer">
     Built for INCLUCODE · Accessibility Software Track
