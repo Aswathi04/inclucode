@@ -1,0 +1,65 @@
+SCHEME: Right to Equal Opportunity and Reasonable Accommodation
+FIELD: overview
+CONTENT: Under the disability rights law, every person with a disability has the right to be treated equally without discrimination. Employers, schools, and public places must provide reasonable accommodation, which means making necessary adjustments like adding ramps, providing accessible software, or changing work schedules so disabled persons can participate and work equally.
+SCHEME: Right to Equal Opportunity and Reasonable Accommodation
+FIELD: next_step
+CONTENT: Visit the office of the State Commissioner for Persons with Disabilities. Tell the officer, "I am facing discrimination and have been denied reasonable accommodation, and I want to file a formal complaint."
+
+===
+
+SCHEME: Four Percent Reservation in Government Jobs
+FIELD: overview
+CONTENT: The government sets aside four percent of all government jobs specifically for persons with benchmark disabilities. This includes roles in government offices, public sector banks, and government-owned companies to ensure everyone gets a fair chance at secure employment.
+SCHEME: Four Percent Reservation in Government Jobs
+FIELD: eligibility
+CONTENT: You must have a benchmark disability, which means your medical certificate must show at least forty percent disability. The reservation is divided equally among different categories such as blindness, deafness, locomotor disability, autism, and multiple disabilities.
+SCHEME: Four Percent Reservation in Government Jobs
+FIELD: next_step
+CONTENT: Visit the Kerala Public Service Commission office or the relevant hiring department when applying for a position. Tell the clerk, "I want to apply for this job under the four percent reservation quota for persons with disabilities."
+
+===
+
+SCHEME: State Commissioner for Persons with Disabilities Kerala Complaints
+FIELD: overview
+CONTENT: If your rights are violated by a state government department, a local authority, or an organization in Kerala, you can file a complaint with the State Commissioner for Persons with Disabilities to seek justice and get the issue resolved.
+SCHEME: State Commissioner for Persons with Disabilities Kerala Complaints
+FIELD: documents
+CONTENT: 1. A written complaint detailing the incident 2. Disability certificate 3. Complete contact details of the opposite party 4. Any proof or supporting documents related to the violation.
+SCHEME: State Commissioner for Persons with Disabilities Kerala Complaints
+FIELD: next_step
+CONTENT: Visit the office of the State Commissioner for Persons with Disabilities in Kerala. Tell the staff, "I want to file a written complaint against an organization that violated my rights under the disability act."
+
+===
+
+SCHEME: Chief Commissioner for Persons with Disabilities Complaints
+FIELD: overview
+CONTENT: If your complaint is against a central government ministry, department, or a central government-owned company, you must file it with the Chief Commissioner for Persons with Disabilities at the central level. They will send a notice to the opposite party and hold a hearing to solve the problem.
+SCHEME: Chief Commissioner for Persons with Disabilities Complaints
+FIELD: documents
+CONTENT: 1. A written complaint explaining what happened and the relief you want 2. Disability certificate 3. Complete address and contact details of the opposite party 4. Supporting documents as evidence.
+SCHEME: Chief Commissioner for Persons with Disabilities Complaints
+FIELD: next_step
+CONTENT: Visit the local office of the central department causing the issue, or write directly to the Chief Commissioner's office in New Delhi. Tell the local officer, "I am sending a formal complaint to the Chief Commissioner because my rights have been violated by this central department."
+
+===
+
+SCHEME: Wrongly Denied Scheme Applications
+FIELD: overview
+CONTENT: Sometimes, an application for a pension, scholarship, or assistive device is rejected by mistake or without a valid reason. You have the right to know exactly why it was denied and the right to challenge that decision to get your rightful benefits.
+SCHEME: Wrongly Denied Scheme Applications
+FIELD: next_step
+CONTENT: Visit the specific government office that rejected your application. Tell the officer, "My application was wrongly denied, and I want the exact reason in writing so I can file a formal appeal."
+
+===
+
+SCHEME: Legal Aid for Persons with Disabilities
+FIELD: overview
+CONTENT: Persons with disabilities are legally entitled to receive completely free legal services. If you need a lawyer to fight a court case, draft a legal document, or get legal advice, the government will provide one at no cost to you.
+SCHEME: Legal Aid for Persons with Disabilities
+FIELD: eligibility
+CONTENT: Any person with a disability as defined by the disability act is eligible for free legal aid, regardless of their income level.
+SCHEME: Legal Aid for Persons with Disabilities
+FIELD: next_step
+CONTENT: Visit your District Legal Services Authority (DLSA) office located at the local court complex, or the Kerala State Legal Services Authority (KeLSA) office. Tell the front desk officer, "I am a person with a disability and I need free legal aid to help with my case."
+
+===

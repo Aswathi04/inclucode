@@ -5,6 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Schemes · വഴികാട്ടി</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <style>
+    .checklist-section {
+      background: linear-gradient(135deg, var(--gold-soft) 0%, rgba(235, 220, 180, 0.5) 100%);
+      border: 2px solid var(--gold);
+      border-radius: 12px;
+      padding: 32px 28px;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .checklist-button {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--palm) 0%, var(--palm-dark) 100%);
+      color: var(--white);
+      border: none;
+      border-radius: 8px;
+      padding: 14px 32px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: var(--font-display);
+      box-shadow: 0 4px 12px rgba(31, 95, 76, 0.2);
+    }
+
+    .checklist-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(31, 95, 76, 0.3);
+    }
+
+    .checklist-button:active {
+      transform: translateY(0);
+    }
+
+    .checklist-hint {
+      margin-top: 16px;
+      color: var(--ink-soft);
+      font-size: 14px;
+      font-family: var(--font-body);
+    }
+  </style>
 </head>
 <body>
 
@@ -25,11 +66,19 @@
       <button type="button" class="voice-toggle" onclick="stopReading()">⏹ Stop</button>
     </div>
     {% endif %}
-
+    <div class="certificate-banner">
+      <span>📋</span>
+      <div>
+        <strong>First time applying?</strong> Most schemes require a disability certificate.
+        <a href="{{ url_for('certificate_guide') }}">Learn how to get one →</a>
+      </div>
+    </div>
+    
     {% if schemes %}
       <div class="scheme-list">
         {% for s in schemes %}
           <a class="scheme-card" data-position="{{ loop.index }}" href="{{ url_for('detail', scheme_id=s.id) }}">
+            <span class="scheme-documents" style="display:none;">{{ s.documents }}</span>
             <span class="card-arrow">→</span>
             <h2>{{ s.scheme }}</h2>
             <p>{{ s.what_you_get }}</p>
@@ -51,6 +100,13 @@
 
     {% if schemes %}
       <a href="{{ url_for('index') }}" class="back-link">← Search again</a>
+    {% endif %}
+
+    {% if schemes %}
+    <div class="checklist-section">
+      <button type="button" class="checklist-button" onclick="generateChecklist()">📋 Download My Documents Checklist</button>
+      <p class="checklist-hint">Get a checklist of all documents needed for the schemes you qualify for.</p>
+    </div>
     {% endif %}
     </div>
   </main>
@@ -133,5 +189,40 @@
     });
   </script>
 
+  <script>
+    function generateChecklist() {
+      const cards = document.querySelectorAll('.scheme-card');
+      const allDocs = new Set();
+
+      // Always-needed documents
+      ['Aadhaar card', 'Disability certificate (minimum 40%)', 'Bank passbook copy', 'Passport size photographs (4 copies)'].forEach(d => allDocs.add(d));
+
+      cards.forEach(card => {
+        const docsEl = card.querySelector('.scheme-documents');
+        if (docsEl) {
+          docsEl.textContent.split('\n').forEach(line => {
+            const clean = line.replace(/^\d+\.\s*/, '').trim();
+            if (clean) allDocs.add(clean);
+          });
+        }
+      });
+
+      let text = 'MY DOCUMENTS CHECKLIST\n';
+      text += 'Vazhikaatti — Accessible Scheme Navigator\n\n';
+      text += 'Bring these documents when visiting government offices:\n\n';
+      [...allDocs].forEach((doc, i) => {
+        text += `☐ ${doc}\n`;
+      });
+      text += '\nGenerated July 2026. Confirm with your local office.';
+
+      const blob = new Blob([text], { type: 'text/plain' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'vazhikaatti-documents-checklist.txt';
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+  </script>
 </body>
 </html>

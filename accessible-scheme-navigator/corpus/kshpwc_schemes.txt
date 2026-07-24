@@ -1,30 +1,25 @@
-SCHEME NAME: ADIP Scheme (Assistance to Disabled Persons for Purchase/Fitting of Aids and Appliances) DEPARTMENT: Kerala State Handicapped Persons Welfare Corporation (KSHPWC) / Central Government WHO CAN APPLY: All recognized disabilities (minimum 40% disability). Age: All ages. Income limit: Monthly income up to Rs. 22,500 for full free subsidy; Rs. 22,501 to Rs. 30,000 for a 50% subsidy. WHAT YOU GET: High-quality, modern assistive devices like motorized tricycles, smart canes, hearing aids, and prosthetics to reduce the impact of your disability. DOCUMENTS NEEDED:
-Disability Certificate (minimum 40%)
-Income Certificate from Revenue Agency or BPL card
-Aadhaar Card
-Passport size photographs WHERE TO APPLY: KSHPWC Office or during authorized local ADIP assessment camps. HOW TO APPLY:
-Look out for ADIP assessment camps held in your district by KSHPWC or local authorities.
-Go to the camp with your documents.
-Doctors at the camp will assess what specific device you need.
-The device will be distributed to you at a follow-up camp.
-SCHEME NAME: Loan Scheme for Self Employment DEPARTMENT: Kerala State Handicapped Persons Welfare Corporation (KSHPWC) WHO CAN APPLY: Persons with 40% to 100% disability who want to start a business and are not government employees. Age: Usually 18 to 55 years. Income limit: Check with KSHPWC for current limits. WHAT YOU GET: A low-interest loan up to Rs. 50 Lakhs to help you start your own business, shop, or self-employment venture. DOCUMENTS NEEDED:
-Disability Certificate (40% - 100%)
-Aadhaar Card and Ration Card
-Project report of the business you want to start
-Property document or salary certificate of a government employee as a guarantee
-Canara Bank account passbook WHERE TO APPLY: KSHPWC Head Office or download the form from hpwc.kerala.gov.in. HOW TO APPLY:
-Download the application form from the KSHPWC website or collect it from their office.
-Create a basic project report explaining the business you want to do.
-Arrange for a guarantor (property valuation or a government employee's salary certificate).
-Submit the form, project report, and guarantee documents to KSHPWC.
-SCHEME NAME: Skill Training and Placement Programme DEPARTMENT: Kerala State Handicapped Persons Welfare Corporation (KSHPWC) WHO CAN APPLY: Persons with disabilities (minimum 40% disability) looking for jobs. Age: Youth and working-age adults. Income limit: Not generally applicable for training. WHAT YOU GET: Free vocational training in skills like computer operation, tailoring, or electronics, followed by help finding a job in the private or public sector. DOCUMENTS NEEDED:
-Disability Certificate (minimum 40%)
-Educational Certificates (SSLC/Degree)
-Aadhaar Card
-Passport size photographs WHERE TO APPLY: KSHPWC Office or authorized training centers in Kerala. HOW TO APPLY:
-Check the KSHPWC website or local newspapers for new training batch announcements.
-Apply with your educational and disability certificates.
-Attend the interview or counseling session to select a suitable course.
-Complete the training to receive placement assistance.
-
-
+SCHEME: ADIP Scheme - Assistive Devices (Central Government, via DEPwD/ALIMCO/State Agencies)
+FIELD: overview
+CONTENT: ADIP stands for "Assistance to Disabled Persons for Purchase/Fitting of Aids and Appliances." It is a Central Government scheme, running since 1981, that helps disabled persons get modern, durable assistive devices like wheelchairs, hearing aids, artificial limbs, and Braille equipment. KSHPWC is one of the state-level agencies involved in distributing these devices in Kerala.
+FIELD: eligibility
+CONTENT: You can be an Indian citizen of any age. You must hold a disability certificate showing 40% or more disability (benchmark disability under the RPWD Act). Your monthly income from all sources (or your parents'/guardian's income if you are a dependent) must not exceed Rs. 30,000. You should not have received assistance for the same device in the last 3 years (1 year for children below 12).
+FIELD: benefit
+CONTENT: You get the assistive device itself, at little or no cost. There are also fixed amounts for essential surgery or medical correction needed before fitting a device, for example around Rs. 1,500 for speech and hearing impairment cases (exact amounts vary by disability type and are revised periodically).
+FIELD: documents
+CONTENT: 1. Disability certificate (40% or more) or UDID card 2. Aadhaar card 3. Income proof/certificate 4. Passport-size photograph 5. Medical assessment/prescription confirming which device you need
+FIELD: next_step
+CONTENT: Visit your nearest District Disability Rehabilitation Centre, ALIMCO camp, or KSHPWC office, or register yourself online on the ARJUN Portal (adip.depwd.gov.in). Say, "I want to apply for an assistive device under the ADIP scheme," and ask them to check your eligibility and guide you to the next camp or distribution centre.
+===
+SCHEME: Loan Scheme for Self Employment (KSHPWC)
+FIELD: overview
+CONTENT: KSHPWC (Kerala State Handicapped Persons Welfare Corporation) is the state agency that channels loans from NHFDC (National Divyangjan Finance and Development Corporation) to help persons with disabilities start their own business or self-employment venture.
+FIELD: eligibility
+CONTENT: You must be a person with disability of 40% to 100%. You must not be a government employee. You need to submit a detailed project report and cost estimate for the business you want to start, along with property or salary documents as loan guarantee.
+FIELD: benefit
+CONTENT: A loan of up to Rs. 50 lakh can be given for self-employment ventures, generally equal to 100% of the valuation of the guarantee property offered. Interest rates for NHFDC-linked loans are concessional (typically in the range of about 4-9% per year depending on the loan amount and scheme, with an additional rebate for women applicants); please confirm the current rate at the time of application as it can change.
+FIELD: documents
+CONTENT: 1. Duly filled application form in the prescribed format 2. Medical Board certificate confirming disability 3. Detailed project report and cost estimate for the business 4. Property document or government salary certificate as loan guarantee 5. Valuation certificate of the guarantee property, from the Village Officer and the LSGD PWD Engineer 6. Canara Bank account (required, since disbursement is made through this bank)
+FIELD: next_step
+CONTENT: Visit the KSHPWC office (head office in Poojappura, Thiruvananthapuram, or your nearest KSHPWC regional office). Say, "I want to apply for the NHFDC self-employment loan through KSHPWC," and ask them for the application form and current interest rate.
+===
+NOTE: "Skill Training and Placement Programme (KSHPWC)" was requested but could not be verified as an actual distinct KSHPWC-branded scheme with its own eligibility/benefit rules. KSHPWC's current official scheme list (Aswasam, Hasthadanam, Loan Schemes, Oppam, Shubhayathra) does not include it by that name. Closest related programmes found: "Samagra" (run by Kerala Knowledge Economy Mission with Social Justice Dept, not KSHPWC) and general skill-development duties of the State Commissionerate for PwD. If you have a source name or GO number for this scheme, send it and this entry will be added properly.

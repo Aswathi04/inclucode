@@ -629,3 +629,19 @@ body.intro-active #screen-hero.handoff {
   visibility: hidden;
   pointer-events: none;
 }
+.certificate-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: #FEF9E7;
+  border: 1.5px solid #D68910;
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.certificate-banner a {
+  color: #1F5F4C;
+  font-weight: 600;
+}

@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, session
+from flask import Flask, render_template, request, session, redirect, url_for
 from rag import get_schemes
 import os
 
@@ -40,6 +40,10 @@ def detail(scheme_id):
         return render_template("detail.html", scheme=match)
     return "Scheme not found", 404
 
+@app.route("/certificate-guide")
+def certificate_guide():
+    return render_template("certificate_guide.html")
+
 def parse_schemes(raw_text: str) -> list:
     schemes = []
     blocks = raw_text.split("---")
@@ -48,7 +52,14 @@ def parse_schemes(raw_text: str) -> list:
         if not block:
             continue
         scheme = {"id": i}
-        for line in block.split("\n"):
+        lines = block.split("\n")
+        line_idx = 0
+        
+        field_labels = ["SCHEME:", "WHAT YOU GET:", "MALAYALAM:", "DO YOU QUALIFY:", "DOCUMENTS NEEDED:", "NEXT STEP:"]
+        
+        while line_idx < len(lines):
+            line = lines[line_idx]
+            
             if line.startswith("SCHEME:"):
                 scheme["scheme"] = line.replace("SCHEME:", "").strip()
             elif line.startswith("WHAT YOU GET:"):
@@ -58,9 +69,38 @@ def parse_schemes(raw_text: str) -> list:
             elif line.startswith("DO YOU QUALIFY:"):
                 scheme["qualify"] = line.replace("DO YOU QUALIFY:", "").strip()
             elif line.startswith("DOCUMENTS NEEDED:"):
-                scheme["documents"] = line.replace("DOCUMENTS NEEDED:", "").strip()
+                content_lines = []
+                first_line = line.replace("DOCUMENTS NEEDED:", "").strip()
+                if first_line:
+                    content_lines.append(first_line)
+                line_idx += 1
+                # Collect subsequent lines until we hit another field label
+                while line_idx < len(lines):
+                    next_line = lines[line_idx]
+                    if any(next_line.startswith(label) for label in field_labels):
+                        break
+                    content_lines.append(next_line.rstrip())
+                    line_idx += 1
+                scheme["documents"] = "\n".join(content_lines).strip()
+                continue
             elif line.startswith("NEXT STEP:"):
-                scheme["next_step"] = line.replace("NEXT STEP:", "").strip()
+                content_lines = []
+                first_line = line.replace("NEXT STEP:", "").strip()
+                if first_line:
+                    content_lines.append(first_line)
+                line_idx += 1
+                # Collect subsequent lines until we hit another field label
+                while line_idx < len(lines):
+                    next_line = lines[line_idx]
+                    if any(next_line.startswith(label) for label in field_labels):
+                        break
+                    content_lines.append(next_line.rstrip())
+                    line_idx += 1
+                scheme["next_step"] = "\n".join(content_lines).strip()
+                continue
+            
+            line_idx += 1
+        
         if scheme.get("scheme"):
             schemes.append(scheme)
     return schemes

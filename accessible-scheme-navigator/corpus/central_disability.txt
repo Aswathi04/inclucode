@@ -1,0 +1,35 @@
+SCHEME: National Scholarship for Persons with Disabilities (Central Government, via National Scholarship Portal)
+FIELD: overview
+CONTENT: This is a group of Central Government scholarships (Pre-Matric, Post-Matric, and Top-Class scholarships) for students with disabilities, run by the Department of Empowerment of Persons with Disabilities (DEPwD) and given out through the National Scholarship Portal (NSP).
+FIELD: eligibility
+CONTENT: You must have a benchmark disability of 40% or more, shown by a valid disability certificate or UDID card. For the Pre-Matric scholarship (Class 9-10), family income generally must be below about Rs. 1,00,000-2,50,000 per year (limits are revised periodically, so check the current notification). For the Post-Matric scholarship (Class 11 to Postgraduate), family income must generally be below about Rs. 2,50,000 per year. You must be studying in a recognised school, college, or university in India.
+FIELD: benefit
+CONTENT: You get a monthly maintenance allowance that varies by course and whether you stay in a hostel, generally ranging from around Rs. 550 to Rs. 1,600 per month, along with course fees and other allowances depending on the scheme and course. Extra support may be given for certain disability types.
+FIELD: documents
+CONTENT: 1. Disability certificate (40% or more) or UDID card 2. Income certificate 3. Previous year's academic marksheet 4. Bank account details linked to Aadhaar 5. Current fee receipt from your institution 6. Aadhaar card
+FIELD: next_step
+CONTENT: Go to your school or college's NSP Nodal Officer (usually in the admission or scholarship section), and say, "I want to register on the National Scholarship Portal for the disability scholarship." They will help you complete One-Time Registration (OTR) on scholarships.gov.in and verify your application.
+===
+SCHEME: NHFDC Loans for Disabled Persons (National Divyangjan Finance and Development Corporation)
+FIELD: overview
+CONTENT: NHFDC is a Central Government corporation that gives low-interest loans to persons with disabilities for self-employment, education, vehicle purchase, and other income-generating or empowerment activities, mainly through State Channelising Agencies like KSHPWC in Kerala.
+FIELD: eligibility
+CONTENT: You must be an Indian citizen with a disability of 40% or more, as recognised under the RPWD Act 2016. You should generally be between 18 and 55 years of age for most loan categories. You should not already have an unpaid loan from another government disability scheme, and should have a reasonable repayment capacity.
+FIELD: benefit
+CONTENT: Loan amounts depend on the purpose: around Rs. 3 lakh for a small trading/service business (Rs. 5 lakh for transport activity), Rs. 5 lakh for a small industrial unit, up to Rs. 10 lakh for education in India (Rs. 20 lakh for education abroad), and up to Rs. 50 lakh for larger self-employment ventures. Interest rates are concessional, generally in the range of about 4-9% per year depending on loan size, with a rebate for women applicants. These figures can change, so confirm current rates when applying.
+FIELD: documents
+CONTENT: 1. Loan application form (from the implementing agency or NHFDC website) 2. Disability certificate showing 40% or more disability 3. Income proof 4. Project report or admission/course details, depending on loan type 5. Guarantee documents such as property papers or a guarantor's salary certificate 6. Bank account details
+FIELD: next_step
+CONTENT: Visit your nearest KSHPWC office (the State Channelising Agency for NHFDC loans in Kerala) or a partner bank branch. Say, "I want to apply for an NHFDC loan for [self-employment/education/vehicle]," and ask for the current application form and interest rate.
+===
+SCHEME: National Trust Schemes - Niramaya Health Insurance
+FIELD: overview
+CONTENT: Niramaya is a health insurance scheme run by the National Trust (under the Ministry of Social Justice and Empowerment) for persons with Autism, Cerebral Palsy, Intellectual Disability, and Multiple Disabilities, as covered under the National Trust Act.
+FIELD: eligibility
+CONTENT: You must have Autism, Cerebral Palsy, Intellectual Disability, or Multiple Disabilities as covered under the National Trust Act. You need a valid disability certificate from a competent medical authority, or a UDID card/enrolment number.
+FIELD: benefit
+CONTENT: You get health insurance coverage of up to Rs. 1 lakh per year, on a reimbursement basis. This covers OPD treatment and medicines, regular medical check-ups, preventive dental care, non-surgical hospitalisation, corrective surgeries for the disability (including congenital conditions), ongoing therapies, alternative medicine, and transportation costs. No pre-insurance medical test is required, and there is no exclusion for pre-existing conditions.
+FIELD: documents
+CONTENT: 1. Disability certificate from a competent medical authority 2. UDID card or UDID enrolment number 3. Filled Niramaya enrolment form 4. Premium payment (a subsidised amount, lower for BPL families) 5. Passport-size photograph
+FIELD: next_step
+CONTENT: Visit your nearest National Trust Registered Organisation (an NGO or centre registered with the National Trust). Say, "I want to enrol for the Niramaya health insurance scheme," and ask them to help you fill the form and pay the premium; you can ask your District Social Justice Office for the nearest registered organisation if you don't know one.
